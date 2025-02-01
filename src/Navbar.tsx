@@ -17,8 +17,8 @@ const Navbar: React.FC = () => {
 
     useEffect(() => {
 
-        const student = localStorage.getItem("student")
-        if (student) {
+        const user = localStorage.getItem("user")
+        if (user) {
             setShowUp(false);
             setShowLogin(false);
 
