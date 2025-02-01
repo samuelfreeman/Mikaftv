@@ -1,51 +1,76 @@
-# React + TypeScript + Vite
+# Mikaf TV Website - Frontend Repository
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the **Mikaf TV Website Frontend Repository**. This project serves as the official web platform for Mikaf TV, a dynamic bilingual television station based in Kumasi, Ghana. The website delivers engaging content, program schedules, and multimedia experiences tailored to a diverse audience.
 
-Currently, two official plugins are available:
+## 🌟 About Mikaf TV
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Mikaf TV** is your ultimate destination for vibrant, engaging, and commercially driven television programming. As a bilingual station, we embrace Ghana’s rich cultural diversity while ensuring mass accessibility through dominant local-language content.
 
-## Expanding the ESLint configuration
+### 📌 Our Core Pillars
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Inclusivity**: Embracing diversity in language, culture, and perspectives.
+- **Integrity**: Upholding truth, fairness, and accuracy in all content.
+- **Community Focus**: Serving as a bridge between people and their communities.
+- **Innovation**: Leveraging technology and creativity to enhance storytelling.
+- **Excellence**: Striving for high standards in programming and service delivery.
 
-- Configure the top-level `parserOptions` property like this:
+## 🌍 Website Overview
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+The **Mikaf TV website** provides an interactive and user-friendly experience where visitors can:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- Learn about Mikaf TV’s vision, mission, and core values.
+- Explore program flyers through an automatic slideshow.
+- Stay updated on detailed program lineups and news articles (coming by the end of February).
+- Access the latest videos, entertainment news, and faith-based discussions.
+- Engage with Mikaf TV on social media.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## 🎨 Branding & UI Guidelines
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
-# Mikaftv
+- **Font**: Verdana (consistent with branding identity)
+- **Color Scheme**: To match the official logo colors
+- **Design Preferences**:
+  - A clean, static homepage with clearly defined categories
+  - Simple and intuitive navigation
+  - Responsive design for all devices
+  - Fast-loading static/dynamic pages with minimal animations
+
+## 🚀 Technical Details
+
+- **Tech Stack**: React.js (Frontend), Tailwind CSS (Styling), Vercel (Hosting)
+- **Domain Names**:
+  - [www.mikaftvonline.com](http://www.mikaftvonline.com)
+  - [mikaftvghonline.com](http://mikaftvghonline.com)
+- **Target Audience**: Youth, International Community, and Advertisers
+- **Call to Action**: Subscribe to our YouTube channel, follow us on Facebook & Instagram
+
+## 📞 Contact Information
+
+- **Office Address**: [To be updated]
+- **Phone Number**: [To be updated]
+- **Email**: [info@mikaftv.com](mailto:info@mikaftv.com)
+- **Social Media Handles**:
+  - Facebook: [@mikaftvgh](https://facebook.com/mikaftvgh)
+  - Twitter: [@mikaftvgh](https://twitter.com/mikaftvgh)
+  - Instagram: [@mikaftvgh](https://instagram.com/mikaftvgh)
+
+## 🎯 Approval Workflow
+
+All branding assets, content updates, and UI/UX changes require approval from the **Acting General Manager** before implementation.
+
+## 📌 Contribution Guidelines
+
+Interested in contributing? Follow these steps:
+
+1. Fork this repository.
+2. Create a new branch (`feature-newpage`, `fix-navbar`, etc.).
+3. Commit your changes.
+4. Push the branch and open a pull request for review.
+
+## 📜 License
+
+This project is proprietary to **Mikaf Multimedia** and is not available for redistribution.
+
+---
+
+📢 **Join us as we redefine television broadcasting with fresh, engaging, and people-centered content!** Mikaf TV— *Where Stories Come Alive!*
+
