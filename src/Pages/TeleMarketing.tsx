@@ -1,10 +1,10 @@
-import React from "react";
+
 import { Button } from "@/components/ui/button"; // Assuming you're using a UI library like Shadcn
 import { NavLink } from "react-router";
 
 export default function TelemarketPromotion() {
   return (
-    <section className="bg-gray-50 py-12 px-4 sm:px-6 lg:px-8 h-[130vh] mt-18">
+    <section className="bg-gray-50 py-12 px-6   md:px-8 h-[140vh] md:h-[130vh] mt-18">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
        
 
@@ -52,11 +52,13 @@ export default function TelemarketPromotion() {
          
         </div>
          {/* Image Section */}
-         <div className="w-full h-full p-20">
+         <div className=" w-[100%]  h-[10vh] md:w-full md:h-full  md:p-20">
           <img
+          
             src="/telemarket.jpg" // Replace with your image path
             alt="TeleMarket Promotion"
-        
+             height={"20"}
+             width={"20"}
             className="w-full h-auto rounded-lg shadow-lg"
           />
         </div>

@@ -8,8 +8,8 @@ import { Button } from './components/ui/button';
 
 const Navbar: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const [showRegister, setShowUp] = useState(true)
-    const [showLogin, setShowLogin] = useState(true)
+    // const [showRegister, setShowUp] = useState(true)
+    // const [showLogin, setShowLogin] = useState(true)
 
     // const navigate = useNavigate()
     const toggleMenu = () => {
@@ -18,17 +18,17 @@ const Navbar: React.FC = () => {
 
     useEffect(() => {
 
-        const user = localStorage.getItem("user")
-        if (user) {
-            setShowUp(false);
-            setShowLogin(false);
+        // const user = localStorage.getItem("user")
+        // if (user) {
+        //     setShowUp(false);
+        //     setShowLogin(false);
 
-        }
-        else {
-            setShowUp(true);
-            setShowLogin(true);
+        // }
+        // else {
+        //     setShowUp(true);
+        //     setShowLogin(true);
 
-        }
+        // }
 
 
     }, []);
@@ -61,7 +61,10 @@ const Navbar: React.FC = () => {
                             <Button variant="link"> <NavLink to="/comingsoon" className="text-gray-900 hover:text-gray-700">Innovation</NavLink></Button>
                             <Button variant="link"><NavLink to="/comingsoon" className="text-gray-900 hover:text-gray-700">Sports</NavLink></Button>
                             <Button variant="link"> <NavLink to="/comingsoon" className="text-gray-900 hover:text-gray-700">Video</NavLink></Button>
-                            <Button variant="link"> <NavLink to="/live">Live</NavLink>
+                            <Button variant="link" > <div className='flex '>
+                            <img src="/play-button.png" className='px-2' width={"40"} height={"20"} alt="" />
+                            <NavLink to="/live"> Live</NavLink>
+                                </div>
                             </Button>
                         </div>
                     </div>
@@ -90,8 +93,11 @@ const Navbar: React.FC = () => {
                         <Button variant="link"> <NavLink to="/comingsoon" className="text-gray-900 hover:text-gray-700">Innovation</NavLink></Button>
                         <Button variant="link"><NavLink to="/comingsoon" className="text-gray-900 hover:text-gray-700">Sports</NavLink></Button>
                         <Button variant="link"> <NavLink to="/comingsoon" className="text-gray-900 hover:text-gray-700">Video</NavLink></Button>
-                        <Button variant="link"> <NavLink to="/live">Live</NavLink>
-                        </Button>
+                        <Button variant="link" > <div className='flex '>
+                            <img src="/play-button.png" className='px-2' width={"40"} height={"20"} alt="" />
+                            <NavLink to="/live"> Live</NavLink>
+                                </div>
+                            </Button>
                         {/* {
                             showRegister && showLogin && (
                                 <div className='w-full '>

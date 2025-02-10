@@ -1,26 +1,33 @@
 import Navbar from '@/Navbar'
 
-import SubNav from './SubNav'
+
 import Hero from './Hero'
 import Updates from './Updates'
-import ImageGallery from './ImageGallery'
+
 import TelemarketPromotion from './TeleMarketing'
 import { SiteFooter } from './Footer'
 import VideoDisplay from './ImageGallery'
 import { useState } from 'react'
+import Controls from './SubNav'
+// import Location from './Location'
 
 const Home = () => {
-  const [category, setCategory] = useState<string>('Trending');
+  const [selectedCategory, setSelectedCategory] = useState<string>('Trending');
+  const handleCategoryChange = (category: string) => {
+    console.log(category)
+    setSelectedCategory(category);
+  };
   return (
     <div>
       <Navbar />
       <div className='h-screen'>
-        <SubNav onCategoryChange={setCategory}  selectedCategory={category}/>
-        <Hero  />
-        <Updates/>
-        <VideoDisplay category={category}/>
-        <TelemarketPromotion/>
-        <SiteFooter/>
+        <Controls onCategoryChange={handleCategoryChange} selectedCategory={selectedCategory} />
+        <Hero />
+        <Updates />
+        <VideoDisplay category={selectedCategory} />
+        <TelemarketPromotion />
+        
+        <SiteFooter />
       </div>
     </div>
   )

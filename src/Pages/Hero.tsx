@@ -1,15 +1,16 @@
-import React from 'react'
+
 
 const Hero = () => {
     return (
-        <div className=' mt-56 flex justify-between '>
+        <div className='mb-10 md:mt-44 mt-28 flex justify-between '>
             
-            <div className='w-5/12 m-14'>
+            <div className=' w-full md:w-5/12 m-5 md:m-14'>
                 <h1 className='text-5xl font-bold py-2'>Bringing Stories to Life,</h1>
                 <h1 className='text-2xl font-semibold pb-5'>Live updates, Exclusive Reports & trending News.</h1>
                 <p className='text-md'>Welcome to a dynamic platform where compelling stories unfold, bringing you real-time updates, in-depth exclusive reports, and the latest trends that shape our world. Stay informed, stay inspired, and be part of the conversation.</p>
             </div>
-            <div className="relative w-[450px] h-[450px] bg-[url('/heroimg.svg')] bg-cover mr-20 overflow-hidden rounded-lg">
+            <div className="hidden md:block md:relative md:w-[450px] md:h-[450px] md:bg-[url('/heroimg.svg')] md:bg-cover md:mr-20 md:overflow-hidden md:rounded-lg">
+
   {/* Black Overlay */}
   <div className="absolute top-0 left-0 ml-1 w-[450px] rounded-3xl h-[445px] bg-black opacity-50"></div>
 
