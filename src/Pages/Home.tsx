@@ -9,6 +9,7 @@ import { SiteFooter } from './Footer'
 import VideoDisplay from './ImageGallery'
 import { useState } from 'react'
 import Controls from './SubNav'
+import Location from './Location'
 // import Location from './Location'
 
 const Home = () => {
@@ -26,7 +27,7 @@ const Home = () => {
         <Updates />
         <VideoDisplay category={selectedCategory} />
         <TelemarketPromotion />
-        
+        <Location />
         <SiteFooter />
       </div>
     </div>
