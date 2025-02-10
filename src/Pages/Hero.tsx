@@ -1,36 +1,28 @@
-
-import { Typewriter } from 'react-simple-typewriter'
+import React from 'react'
 
 const Hero = () => {
     return (
-        <div className='w-full h-full   mt-16 lg:mb-52  mb-40'>
-            <div className="relative  bg-cover bg-center pb-16 h-full " style={{ backgroundImage: "url('/heroimg.jpeg')" }}>
-                {/* Black Overlay */}
-                <div className="absolute inset-0 bg-black bg-opacity-85 w-full h-full"></div>
-                {/* Content */}
-                <div className="relative z-10 flex  justify-center items-center h-screen  text-white  ">
-                    <h1 className='  h-screen p-20' >
-
-
-
-                        <span style={{ color: 'white', fontWeight: 'bold' }} className='text-4xl lg:text-6xl  w-5  '>
-                            {/* Style will be inherited from the parent element */}
-                            <Typewriter
-                                words={['Coming soon...','Embracing diversity in language, culture, and perspectives.','Upholding truth, fairness, and accuracy in all content.']}
-                                loop={false}
-                                cursor
-                                cursorStyle='_'
-                                typeSpeed={90}
-                                deleteSpeed={70}
-                                delaySpeed={1000}
-                            />
-                        </span>
-                    </h1>
-
-                    
-                </div>
-              
+        <div className=' mt-56 flex justify-between '>
+            
+            <div className='w-5/12 m-14'>
+                <h1 className='text-5xl font-bold py-2'>Bringing Stories to Life,</h1>
+                <h1 className='text-2xl font-semibold pb-5'>Live updates, Exclusive Reports & trending News.</h1>
+                <p className='text-md'>Welcome to a dynamic platform where compelling stories unfold, bringing you real-time updates, in-depth exclusive reports, and the latest trends that shape our world. Stay informed, stay inspired, and be part of the conversation.</p>
             </div>
+            <div className="relative w-[450px] h-[450px] bg-[url('/heroimg.svg')] bg-cover mr-20 overflow-hidden rounded-lg">
+  {/* Black Overlay */}
+  <div className="absolute top-0 left-0 ml-1 w-[450px] rounded-3xl h-[445px] bg-black opacity-50"></div>
+
+  {/* Content */}
+  <div className='w-full h-full flex  flex-col p-6 pb-10 justify-end items-end'>
+
+  <h1 className="relative text-white w-full py-4 z-10">Agriculture - 1h ago</h1>
+  <h1 className="relative text-white z-10"><span className='font-semibold'>Community Planting Day: </span> A group of volunteers working together in a community garden to plant new vegetation.</h1>
+  </div>
+</div>
+
+
+
 
         </div>
     )

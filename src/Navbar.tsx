@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import { NavLink } from 'react-router';
+import { Button } from './components/ui/button';
 // import { useNavigate } from "react-router";
 
 
@@ -43,41 +44,27 @@ const Navbar: React.FC = () => {
 
 
     return (
-        <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200 ">
+        <nav className="fixed top-0 left-0 right-0 z-50 bg-white  border-gray-200 ">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between h-16">
-                    <div className="flex">
+                    <div className="flex justify-between  w-full">
                         <div className="flex-shrink-0 p-1 justify-center">
                             <NavLink to="/" className="text-xl font-bold ">
-                                <img className="w-36 h-32 -mt-10" src="/logo.png" alt="" />
+                                <img className="w-44 h-44 -mt-16" src="/logo.png" alt="" />
                             </NavLink>
                         </div>
-                        <div className="hidden md:ml-6 md:flex md:space-x-8 md:p-5 md:justify-end md:w-[800px]">
-                            <NavLink to="/" className="text-gray-900 hover:text-gray-700">Home</NavLink>
-                            <NavLink to="/comingsoon" className="text-gray-900 hover:text-gray-700">About</NavLink>
-                            <NavLink to="/comingsoon" className="text-gray-900 hover:text-gray-700">Misson</NavLink>
-                            <NavLink to="/comingsoon" className="text-gray-900 hover:text-gray-700">Progammes</NavLink>
+                        <div className="hidden md:ml-6 md:flex z-0 md:space-x-2 md:p-4 md:justify-end md:w-[800px]">
+                            <Button variant="link"><NavLink to="/" className="text-gray-900 hover:text-gray-700">News</NavLink></Button>
+
+                            <Button variant="link"><NavLink to="/comingsoon" className="text-gray-900 hover:text-gray-700">Business</NavLink></Button>
+                            <Button variant="link"> <NavLink to="/comingsoon" className="text-gray-900 hover:text-gray-700">Politics</NavLink></Button>
+                            <Button variant="link"> <NavLink to="/comingsoon" className="text-gray-900 hover:text-gray-700">Innovation</NavLink></Button>
+                            <Button variant="link"><NavLink to="/comingsoon" className="text-gray-900 hover:text-gray-700">Sports</NavLink></Button>
+                            <Button variant="link"> <NavLink to="/comingsoon" className="text-gray-900 hover:text-gray-700">Video</NavLink></Button>
+                            <Button variant="link"> <NavLink to="/live">Live</NavLink>
+                            </Button>
                         </div>
                     </div>
-                    {
-                        showRegister && (
-                            <div className='flex '>
-
-                                {/* <div className="hidden md:flex items-center">
-                                    <Button className=" w-full px-6  mr-2 bg-black text-white"><NavLink to="/login">Login</NavLink></Button>
-                                </div> */}
-                            </div>
-                        )
-                    }
-                    {
-                        (!showRegister && !showLogin) ? (
-                            <div className="hidden md:flex items-center">
-                                {/* <Button className="mr-4 w-full bg-black text-white" onClick={handleClick}>Logout</Button> */}
-                            </div>
-                        ) : null
-                    }
-
-
 
 
 
@@ -94,12 +81,17 @@ const Navbar: React.FC = () => {
                 </div>
             </div>
             {isOpen && (
-                <div className="md:hidden">
-                    <div className="w-full flex flex-col items-center sm:px-3 p-4 space-y-2">
-                        <NavLink to="/" className="text-gray-900 hover:text-gray-700">Home</NavLink>
-                        <NavLink to="/comingsoon" className="text-gray-900 hover:text-gray-700">About</NavLink>
-                        <NavLink to="/comingsoon" className="text-gray-900 hover:text-gray-700">Misson</NavLink>
-                        <NavLink to="/comingsoon" className="text-gray-900 hover:text-gray-700">Progammes</NavLink>
+                <div className="md:hidden z-100">
+                    <div className="w-full flex  flex-col items-center sm:px-3 p-4 space-y-2">
+                        <Button variant="link"><NavLink to="/" className="text-gray-900 hover:text-gray-700">News</NavLink></Button>
+
+                        <Button variant="link"><NavLink to="/comingsoon" className="text-gray-900 hover:text-gray-700">Business</NavLink></Button>
+                        <Button variant="link"> <NavLink to="/comingsoon" className="text-gray-900 hover:text-gray-700">Politics</NavLink></Button>
+                        <Button variant="link"> <NavLink to="/comingsoon" className="text-gray-900 hover:text-gray-700">Innovation</NavLink></Button>
+                        <Button variant="link"><NavLink to="/comingsoon" className="text-gray-900 hover:text-gray-700">Sports</NavLink></Button>
+                        <Button variant="link"> <NavLink to="/comingsoon" className="text-gray-900 hover:text-gray-700">Video</NavLink></Button>
+                        <Button variant="link"> <NavLink to="/live">Live</NavLink>
+                        </Button>
                         {/* {
                             showRegister && showLogin && (
                                 <div className='w-full '>
