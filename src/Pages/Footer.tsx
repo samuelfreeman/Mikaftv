@@ -2,7 +2,7 @@
 
 export function SiteFooter() {
     return (
-        <footer className="bg-white md:mt-56   border-t">
+        <footer className="bg-white md:mt-56 -mt-10  border-t">
             <div className="mx-auto max-w-screen-xl space-y-8  py-16 px-6 lg:space-y-16 lg:px-8">
                 <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
                     <div>
