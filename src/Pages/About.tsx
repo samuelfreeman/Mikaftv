@@ -1,4 +1,4 @@
-import Navbar from '@/Navbar'
+import Navbar from './components/Navbar'
 
 import { Typewriter } from 'react-simple-typewriter'
 

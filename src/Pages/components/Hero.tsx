@@ -2,12 +2,12 @@
 
 const Hero = () => {
     return (
-        <div className='mb-10 md:mt-44 mt-28 flex justify-between '>
+        <div className='mb-10 md:mt-34  flex justify-between '>
             
             <div className=' w-full md:w-5/12 m-5 md:m-14'>
-                <h1 className='text-5xl font-bold py-2'>Bringing Stories to Life,</h1>
-                <h1 className='text-2xl font-semibold pb-5'>Live updates, Exclusive Reports & trending News.</h1>
-                <p className='text-md'>Welcome to a dynamic platform where compelling stories unfold, bringing you real-time updates, in-depth exclusive reports, and the latest trends that shape our world. Stay informed, stay inspired, and be part of the conversation.</p>
+                <h1 className='text-3xl md:text-5xl font-bold py-2'>Bringing Stories to Life,</h1>
+                <h1 className='text-xl md:text-2xl font-semibold pb-5'>Live updates, Exclusive Reports & trending News.</h1>
+                <p className='text-sm lg:text-md'>Welcome to a dynamic platform where compelling stories unfold, bringing you real-time updates, in-depth exclusive reports, and the latest trends that shape our world. Stay informed, stay inspired, and be part of the conversation.</p>
             </div>
             <div className="hidden md:block md:relative md:w-[450px] md:h-[450px] md:bg-[url('/heroimg.svg')] md:bg-cover md:mr-20 md:overflow-hidden md:rounded-lg">
 

@@ -17,7 +17,7 @@ const VideoDisplay: React.FC<VideoDisplayProps> = ({ category }) => {
 
 
     return (
-        <main className="grid grid-cols-1  md:grid-cols-3 gap-4 w-full max-w-full px-5 md:p-10 mt-20">
+        <main  className="grid grid-cols-1  md:grid-cols-3 gap-4 w-full max-w-full px-5 md:p-10 mt-20">
             {/* Large video on the left */}
             <Card className="md:col-span-2 hover:shadow-xl hover:shadow-[#681fa379] transition-shadow">
                 <CardContent className="p-0">

@@ -1,15 +1,15 @@
-import Navbar from '@/Navbar'
+import Navbar from './components/Navbar'
 
 
-import Hero from './Hero'
-import Updates from './Updates'
+import Hero from './components/Hero'
+import Updates from './components/Updates'
 
-import TelemarketPromotion from './TeleMarketing'
-import { SiteFooter } from './Footer'
-import VideoDisplay from './ImageGallery'
+import TelemarketPromotion from './components/TeleMarketing'
+import { SiteFooter } from './components/Footer'
+import VideoDisplay from './components/ImageGallery'
 import { useState } from 'react'
-import Controls from './SubNav'
-import Location from './Location'
+import Controls from './components/SubNav'
+import Location from './components/Location'
 // import Location from './Location'
 
 const Home = () => {
@@ -25,8 +25,11 @@ const Home = () => {
         <Controls onCategoryChange={handleCategoryChange} selectedCategory={selectedCategory} />
         <Hero />
         <Updates />
-        <VideoDisplay category={selectedCategory} />
-        <TelemarketPromotion />
+        <div id="target-section">
+
+          <VideoDisplay category={selectedCategory} />
+          <TelemarketPromotion />
+        </div>
         <Location />
         <SiteFooter />
       </div>

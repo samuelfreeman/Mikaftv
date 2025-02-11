@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import { NavLink } from 'react-router';
-import { Button } from './components/ui/button';
+import { Button } from '@/components/ui/button';
 // import { useNavigate } from "react-router";
 
 
