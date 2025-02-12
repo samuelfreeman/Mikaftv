@@ -28,8 +28,8 @@ const Home = () => {
         <div id="target-section">
 
           <VideoDisplay category={selectedCategory} />
-          <TelemarketPromotion />
         </div>
+          <TelemarketPromotion />
         <Location />
         <SiteFooter />
       </div>

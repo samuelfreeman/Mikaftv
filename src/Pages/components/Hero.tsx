@@ -2,7 +2,7 @@
 
 const Hero = () => {
     return (
-        <div className='mb-10 md:mt-34  flex justify-between '>
+        <div className='mb-10 mt-24 md:mt-32  flex justify-between '>
             
             <div className=' w-full md:w-5/12 m-5 md:m-14'>
                 <h1 className='text-3xl md:text-5xl font-bold py-2'>Bringing Stories to Life,</h1>
