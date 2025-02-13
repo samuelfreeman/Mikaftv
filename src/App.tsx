@@ -7,6 +7,7 @@ import CommingSoon from './Pages/CommingSoon'
 import Programes from './Pages/Programes'
 import Navbar from './Pages/components/Navbar'
 import { SiteFooter } from './Pages/components/Footer'
+import About from './Pages/About'
 
 
 const App: React.FC = () => {
@@ -21,6 +22,7 @@ const App: React.FC = () => {
         <Route path='/comingsoon' element={<CommingSoon />} />
         <Route path='/comingsoon' element={<CommingSoon />} />
         <Route path='/programmes' element={<Programes />} />
+        <Route path='/about' element={<About />} />
       </Routes>
       {/* <SiteFooter /> */}
     </Router>

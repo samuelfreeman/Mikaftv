@@ -2,6 +2,7 @@
 import Navbar from './components/Navbar'
 import Banner from './components/Banner'
 import Shows from './components/Shows'
+import { SiteFooter } from './components/Footer'
 
 const Programes = () => {
     return (
@@ -22,6 +23,7 @@ const Programes = () => {
                     <p>Get ready for an exciting transformation on Mikaf TV as we introduce a dynamic lineup of fresh and engaging programs tailored just for you! From thought-provoking discussions on health and wellness with Afia Bemah, to in-depth news reports on community events with Steve Kells, and the hottest entertainment trends on VybZone 360, we’re bringing you unmatched content that informs, entertains, and inspires. But that’s not all! No matter your interest, Mikaf TV is your go-to destination for the best in television programming. Stay tuned, because something amazing is on the way!</p>
                 </div>
             </div>
+            <SiteFooter />
         </div>
     )
 }
