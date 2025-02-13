@@ -2,7 +2,7 @@ import Navbar from './components/Navbar'
 
 import { Typewriter } from 'react-simple-typewriter'
 
-const About = () => {
+const CommingSoon = () => {
     return (
         <div className='bg-black w-full h-full'>
             <Navbar/>
@@ -30,4 +30,4 @@ const About = () => {
     )
 }
 
-export default About
+export default CommingSoon
