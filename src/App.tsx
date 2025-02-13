@@ -1,20 +1,20 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router'
+import { BrowserRouter as Router, Routes, Route } from 'react-router'
 import './index.css'
 import Home from './Pages/Home'
 import CommingSoon from './Pages/CommingSoon'
 
 import Programes from './Pages/Programes'
+import Navbar from './Pages/components/Navbar'
+import { SiteFooter } from './Pages/components/Footer'
 
 
 const App: React.FC = () => {
 
   return (
-    <BrowserRouter>
-
-
+    <Router>
+      {/* <Navbar /> */}
       <Routes>
-
         <Route path='/' element={<Home />} />
         <Route path='/comingsoon' element={<CommingSoon />} />
         <Route path='/comingsoon' element={<CommingSoon />} />
@@ -22,7 +22,8 @@ const App: React.FC = () => {
         <Route path='/comingsoon' element={<CommingSoon />} />
         <Route path='/programmes' element={<Programes />} />
       </Routes>
-    </BrowserRouter>
+      {/* <SiteFooter /> */}
+    </Router>
   )
 }
 
