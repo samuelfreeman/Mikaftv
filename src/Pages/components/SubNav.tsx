@@ -40,7 +40,7 @@ const Controls: React.FC<ButtonControlsProps> = ({ onCategoryChange, selectedCat
             className={`min-w-max px-3 sm:px-5 mx-2 sm:mx-3 mt-2 sm:mt-5 rounded transition-colors duration-300 ${
               selectedCategory === category
                 ? "bg-[#681FA3] text-white"
-                : "bg-gray-200 text-black hover:bg-gray-300"
+                : "bg-gray-200 text-black"
             }`}
             onClick={() => onCategoryChange(category)}
           >
@@ -55,7 +55,7 @@ const Controls: React.FC<ButtonControlsProps> = ({ onCategoryChange, selectedCat
         <Button className="mt-2 sm:mt-0" variant="outline">
           Programmes
         </Button>
-      </div>
+      </div>  
     </div>
   );
 };
