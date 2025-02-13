@@ -6,9 +6,9 @@ const Banner = () => {
         <div className='w-full flex justify-center gap-2 '>
             <h1>Programes</h1>
             <span className=' w-3 h-6 border-black border-r-2 '></span>
-            <div className='flex gap-2 border px-1  rounded-md'>
+            <div className='flex gap-2 border px-1  rounded-md items-center'>
 
-            <img width={"25"} src="/notificaiton.png" alt="notification icon" />
+            <img width={"19"} height={"10"} src="/notificaiton.png" alt="notification icon" />
             <p className='text-sm'>Follow Our Lineups & Stay Tuned</p>
             </div>
         </div>
