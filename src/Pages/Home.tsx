@@ -5,7 +5,7 @@ import Hero from './components/Hero'
 import Updates from './components/Updates'
 
 import TelemarketPromotion from './components/TeleMarketing'
-import { SiteFooter } from './components/Footer'
+import Footer from './components/Footer'
 import VideoDisplay from './components/ImageGallery'
 import { useState } from 'react'
 import Controls from './components/SubNav'
@@ -31,7 +31,7 @@ const Home = () => {
         </div>
           <TelemarketPromotion />
         <Location />
-        <SiteFooter />
+        <Footer />
       </div>
     </div>
   )

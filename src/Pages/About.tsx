@@ -1,6 +1,7 @@
 import CoreValues from "./components/CoreValues"
-import { SiteFooter } from "./components/Footer"
+import Footer from "./components/Footer"
 import Navbar from "./components/Navbar"
+import Team from "./components/Team"
 
 
 const About = () => {
@@ -18,7 +19,8 @@ const About = () => {
                 </div>
             </div>
             <CoreValues/>
-            <SiteFooter />
+            <Team/>
+            <Footer />
         </div>
     )
 }

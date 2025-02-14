@@ -5,8 +5,8 @@ import Home from './Pages/Home'
 import CommingSoon from './Pages/CommingSoon'
 
 import Programes from './Pages/Programes'
-import Navbar from './Pages/components/Navbar'
-import { SiteFooter } from './Pages/components/Footer'
+
+
 import About from './Pages/About'
 
 

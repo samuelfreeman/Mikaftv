@@ -8,7 +8,7 @@ const Shows = () => {
         {programes.map((data) => (
           <div
             key={data.id}
-            className={` md:px-16 my-10 px-3 ${
+            className={` md:px-16 my-14  px-3 ${
               data.isLeft
                 ? " flex md:flex-row-reverse flex-col-reverse gap-10"
                 : "md:flex gap-10"
@@ -27,14 +27,14 @@ const Shows = () => {
                 {/* title */}
                 <div className="space-y-3">
                   {" "}
-                  <h1 className="font-bold text-[22px] ">
+                  <h1 className="font-bold text-md md:text-[22px] ">
                     <i>{data.title}</i>
                   </h1>
                   <p className="border-b-2 w-[20vw] "></p>
                   {/* description */}
-                  <p className="text-xl text-justify">{data.des}</p>
+                  <p className="text-md text-justify">{data.des}</p>
                   {/* const */}
-                  <h3 className="font-medium text-xl">🎧 What to Expect:</h3>
+                  <h3 className="font-medium md:text-xl">{data.subtitle}:</h3>
                   {/* List of expectation */}
                   <ul>
                     {data.list.map((list, index) => (
@@ -45,7 +45,7 @@ const Shows = () => {
                     ))}
                   </ul>
                   {/* subdescri[ption] */}
-                  <p className="text-xl ">{data.content}</p>
+                  <p className="text-lg ">{data.content}</p>
                 </div>
                 {/* date */}
                 <div className="text-[#696969] font-medium text-lg flex space-x-3">

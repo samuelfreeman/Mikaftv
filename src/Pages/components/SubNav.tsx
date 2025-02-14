@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router";
 
 interface ButtonControlsProps {
   onCategoryChange: (category: string) => void;
@@ -27,8 +28,8 @@ const Controls: React.FC<ButtonControlsProps> = ({ onCategoryChange, selectedCat
   return (
     <div
       className={`w-full md:flex md:justify-between top-14  left-0 right-0 z-50 fixed transition-opacity duration-500 ${showButtons
-          ? "opacity-100 visible delay-200 bg-white border-b"
-          : "opacity-0 pointer-events-none"
+        ? "opacity-100 visible delay-200 bg-white border-b"
+        : "opacity-0 pointer-events-none"
         }`}
     >
       {/* Category Buttons (Scrollable on small screens) */}
@@ -37,8 +38,8 @@ const Controls: React.FC<ButtonControlsProps> = ({ onCategoryChange, selectedCat
           <Button
             key={category}
             className={`min-w-max px-3 sm:px-5 mx-2 sm:mx-3 mt-2 sm:mt-5 rounded transition-colors duration-300 ${selectedCategory === category
-                ? "bg-[#681FA3] text-white"
-                : "bg-gray-200 text-black"
+              ? "bg-[#681FA3] text-white"
+              : "bg-gray-200 text-black"
               }`}
             onClick={() => onCategoryChange(category)}
           >
@@ -51,7 +52,8 @@ const Controls: React.FC<ButtonControlsProps> = ({ onCategoryChange, selectedCat
       <div className="hidden md:m-4 md:flex flex-col sm:flex-row sm:items-center sm:justify-end sm:space-x-2 sm:mr-20">
         <Input className="w-full sm:w-3/4" type="email" placeholder="Search news, topics and more..." />
         <Button className="mt-2 sm:mt-0" variant="outline">
-          Programmes
+          <NavLink to={"/programmes"}>Programmes</NavLink>
+
         </Button>
       </div>
     </div>

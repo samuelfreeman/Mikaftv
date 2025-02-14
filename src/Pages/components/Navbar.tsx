@@ -58,17 +58,13 @@ const Navbar: React.FC = () => {
 
                             <Button variant="link"><NavLink to="/comingsoon" className="text-gray-900 hover:text-gray-700">Business</NavLink></Button>
                             <Button variant="link"> <NavLink to="/comingsoon" className="text-gray-900 hover:text-gray-700">Politics</NavLink></Button>
-                            <Button variant="link"> <NavLink to="/comingsoon" className="text-gray-900 hover:text-gray-700">Innovation</NavLink></Button>
-                            <Button variant="link"><NavLink to="/comingsoon" className="text-gray-900 hover:text-gray-700">Sports</NavLink></Button>
+                            <Button variant="link"> <NavLink to="/programmes">Programmes</NavLink></Button>
+                            <Button variant="link"><NavLink to="/about" className="text-gray-900 hover:text-gray-700">About</NavLink></Button>
                             <Button variant="link"> <NavLink to="/comingsoon" className="text-gray-900 hover:text-gray-700">Video</NavLink></Button>
                             <Button variant="link" > <div className='flex '>
                                 <img src="/play-button.png" className='px-2' width={"40"} height={"20"} alt="" />
                                 <NavLink to="/live"> Live</NavLink>
                             </div>
-                            </Button>
-
-                            <Button className="mt-2 sm:mt-0" variant="outline">
-                                <NavLink to="/programmes">Programmes</NavLink>
                             </Button>
                         </div>
                     </div>
@@ -95,7 +91,7 @@ const Navbar: React.FC = () => {
                         <Button variant="link"><NavLink to="/comingsoon" className="text-gray-900 hover:text-gray-700">Business</NavLink></Button>
                         <Button variant="link"> <NavLink to="/comingsoon" className="text-gray-900 hover:text-gray-700">Politics</NavLink></Button>
                         <Button variant="link"> <NavLink to="/comingsoon" className="text-gray-900 hover:text-gray-700">Innovation</NavLink></Button>
-                        <Button variant="link"><NavLink to="/comingsoon" className="text-gray-900 hover:text-gray-700">Sports</NavLink></Button>
+                        <Button variant="link"><NavLink to="/programmes">Programmes</NavLink></Button>
                         <Button variant="link"> <NavLink to="/comingsoon" className="text-gray-900 hover:text-gray-700">Video</NavLink></Button>
                         <Button variant="link" > <div className='flex '>
                             <img src="/play-button.png" className='px-2' width={"40"} height={"20"} alt="" />
@@ -103,9 +99,6 @@ const Navbar: React.FC = () => {
                         </div>
                         </Button>
 
-                        <Button className="mt-2 sm:mt-0" variant="outline">
-                            <NavLink to="/programmes">Programmes</NavLink>
-                        </Button>
                         {/* {
                             showRegister && showLogin && (
                                 <div className='w-full '>
