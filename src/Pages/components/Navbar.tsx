@@ -90,7 +90,7 @@ const Navbar: React.FC = () => {
 
                         <Button variant="link"><NavLink to="/comingsoon" className="text-gray-900 hover:text-gray-700">Business</NavLink></Button>
                         <Button variant="link"> <NavLink to="/comingsoon" className="text-gray-900 hover:text-gray-700">Politics</NavLink></Button>
-                        <Button variant="link"> <NavLink to="/comingsoon" className="text-gray-900 hover:text-gray-700">Innovation</NavLink></Button>
+                        <Button variant="link"><NavLink to="/about" className="text-gray-900 hover:text-gray-700">About</NavLink></Button>
                         <Button variant="link"><NavLink to="/programmes">Programmes</NavLink></Button>
                         <Button variant="link"> <NavLink to="/comingsoon" className="text-gray-900 hover:text-gray-700">Video</NavLink></Button>
                         <Button variant="link" > <div className='flex '>
