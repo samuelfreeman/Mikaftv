@@ -6,9 +6,15 @@ const CoreValues = () => {
       <div className="md:flex  gap-10 w-full justify-center  ">
 
         {/* image  */}
-        <div className="bg-[#0E737D] md:w-[563px] max-w-[563px] h-[492px] rounded-md">
+        <div className="bg-[#0E737D] md:w-[563px] w-full max-w-[563px] h-[492px] rounded-md overflow-hidden">
+  <img 
+    className="w-full h-full object-cover rounded-md" 
+    src="/heroimg.jpeg" 
+    alt="" 
+  />
+</div>
 
-        </div>
+
         {/* corevalues */}
         <div className="space-y-2">
 

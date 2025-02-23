@@ -1,4 +1,4 @@
-import { show,  VybeZoneVideo,Mycommunity } from "@/assets";
+import { show,  vybzone,programe } from "@/assets";
 import { teamPics } from "@/assets";
 
 // interface for upcomming programs
@@ -30,8 +30,8 @@ export const programes = [
     {
         id: 2,
         title: 'VybZone 360 – The Ultimate Entertainment Experience!',
-        mediaUrl: VybeZoneVideo, // Change from imageUrl to mediaUrl
-        type: "video", // Specify type
+        mediaUrl: vybzone, // Change from imageUrl to mediaUrl
+        type: "image", // Specify type
         date: 'August 20',
         des: "Get ready for non-stop entertainment, exclusive celebrity interviews, trending music, and the hottest gist from around the world! Hosted by the charismatic Steve Kells, VybZone 360 is your go-to show for everything fun, vibrant, and exciting. Whether it's the latest in pop culture, movie breakdowns, or viral social media moments, we've got it all covered!",
         subtitle: '🎧 The 100: A Tour of the Top Stories',
@@ -42,8 +42,8 @@ export const programes = [
     {
         id: 3,
         title: 'My Community, My News with Steve Kells – Your Trusted Source for Local Stories!',
-        mediaUrl: Mycommunity, // Change from imageUrl to mediaUrl
-        type: "video", // Specify type
+        mediaUrl: programe, // Change from imageUrl to mediaUrl
+        type: "image", // Specify type
         date: 'August 20',
         des: "Stay informed with the latest news and events shaping our communities! Hosted by the dynamic Steve Kells, My Community, My News brings you in-depth coverage of the issues that matter most. From breaking news and social issues to inspiring community successes and local events, we deliver authentic, timely, and engaging reports that keep you connected. Our team is dedicated to highlighting real stories from real people, ensuring every voice is heard and every moment captured.",
         subtitle: '📺 Enjoy and embrace the latest stories',

@@ -4,7 +4,7 @@ import { NavLink } from "react-router";
 
 export default function TelemarketPromotion() {
   return (
-    <section className="bg-gray-50 md:py-12 px-6   md:px-8 h-[140vh] md:h-[130vh] mt-18">
+    <section className="bg-gray-50 md:py-12 px-6   md:px-8 h-[230vh] md:h-[130vh] mt-28 md:mt-18">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
        
 

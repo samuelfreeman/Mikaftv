@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Banner from './components/Banner'
 import Shows from './components/Shows'
 import Footer from './components/Footer'
+import { NavLink } from 'react-router'
 
 const Programes = () => {
     return (
@@ -15,7 +16,7 @@ const Programes = () => {
             <div className='px-3 md:px-16 text-justify mb-10 '>
                 {/* button */}
                 <div className='flex justify-end my-5'>
-                    <button className='bg-[#27BBA4] px-6 py-2 text-white font-medium rounded-md hover:bg-[#13675a] duration-300'>View more</button>
+                    <button className='bg-[#27BBA4] px-6 py-2 text-white font-medium rounded-md hover:bg-[#13675a] duration-300'><NavLink to={'/about'}>View more</NavLink></button>
                 </div>
                 {/* text */}
                 <div>
