@@ -1,6 +1,6 @@
 import CoreValues from "./components/CoreValues"
 import Footer from "./components/Footer"
-import Navbar from "../assets/Navbar"
+import Navbar from "./components/Navbar"
 import Team from "./components/Team"
 
 
@@ -18,8 +18,8 @@ const About = () => {
 
                 </div>
             </div>
-            <CoreValues />
-            <Team />
+            <CoreValues/>
+            <Team/>
             <Footer />
         </div>
     )

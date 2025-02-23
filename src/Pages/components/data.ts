@@ -1,4 +1,5 @@
-import { show, vybzone, programe, producer2, producer3, cinematographer, videographer, production, Mcr, frontdesk1, frontdesk2, transport, producer1, ceo, generalmanager, headOfAdministration, administrator } from "@/assets";
+import { show, vybzone, programe } from "@/assets";
+import { teamPics } from "@/assets";
 
 // interface for upcomming programs
 interface programes {
@@ -54,104 +55,92 @@ export const programes = [
 export const team = [
     {
         id: 1,
-        name: 'Francis Mikado',
-        position: 'Chief Executive Officer (CEO)',
-        imageUrl: ceo
+        name: 'Kwabena Mantey',
+        position: 'General Manager',
+        imageUrl: teamPics.generalmanager
     },
     {
         id: 2,
-        name: 'Kwabena Mantey',
-        position: 'General Manager',
-        imageUrl: generalmanager
-    },
-    {
-        id: 3,
         name: 'Diana Mantey',
         position: 'Head  of Administration & Finance',
-        imageUrl: headOfAdministration
+        imageUrl: teamPics.headOfAdministration
+
+    }
+    ,
+    {
+        id: 3,
+        name: 'Gabriella Selorm Gbekie',
+        position: 'Administrator',
+        imageUrl: teamPics.administrator
 
     }
     ,
     {
         id: 4,
-        name: 'Gabriella Selorm Gbekie',
-        position: 'Administrator',
-        imageUrl: administrator
-
-    }
-    ,
-  
-
-]
-
-
-
-
-export const management =[
-    {
-        id: 1,
         name: 'Steven Okyere',
         position: 'Presentor/Producer',
-        imageUrl: producer1
+        imageUrl: teamPics.producer1
 
     },
     ,
     {
-        id: 2,
+        id: 5,
         name: 'Nana Yaa Bemah',
         position: 'Presentor/Producer',
-        imageUrl: producer2
+        imageUrl: teamPics.producer2
     }
 
   ,
     {
-        id: 3,
+        id: 6,
         name: 'Kezia Acquah (Afia Bemah)',
         position: 'Presentor/Producer',
-        imageUrl: producer3
-    },
-    {
-        id: 4,
-        name: 'Festus Osei Agyekum',
-        position: 'Cinematographer',
-        imageUrl: cinematographer
-    },
-    {
-        id: 5,
-        name: 'Francis Asare Darko',
-        position: '',
-        imageUrl: videographer
-    },
-    {
-        id: 6,
-        name: 'Jacob Adama',
-        position: 'Production',
-        imageUrl: production
+        imageUrl: teamPics.producer3
     },
     {
         id: 7,
-        name: 'Ebo Cobbinah',
-        position: 'MCR Technician',
-        imageUrl: Mcr
+        name: 'Festus Osei Agyekum',
+        position: 'Cinematographer',
+        imageUrl: teamPics.cinematographer
     },
     {
         id: 8,
-        name: 'Josephine Osei Agyeman',
-        position: 'MCR Technician',
-        imageUrl: frontdesk1
-    }
-    ,
+        name: 'Francis Asare Darko',
+        position: '',
+        imageUrl: teamPics.videographer
+    },
     {
         id: 9,
-        name: 'Shiada Wiafe ',
+        name: 'Jacob Adama',
+        position: 'Production',
+        imageUrl: teamPics.production
+    },
+    {
+        id: 10,
+        name: 'Ebo Cobbinah',
         position: 'MCR Technician',
-        imageUrl: frontdesk2
+        imageUrl: teamPics.Mcr
+    },
+    {
+        id: 11,
+        name: 'Josephine Osei Agyeman',
+        position: 'MCR Technician',
+        imageUrl: teamPics.frontdesk1
     }
     ,
     {
-        id: 10,
+        id: 12,
+        name: 'Shiada Wiafe ',
+        position: 'MCR Technician',
+        imageUrl: teamPics.frontdesk2
+    }
+    ,
+    {
+        id: 13,
         name: 'Salifu Ibrahim ',
         position: 'Transport',
-        imageUrl: transport
+        imageUrl: teamPics.transport
     }
+
 ]
+

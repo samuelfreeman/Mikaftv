@@ -50,7 +50,7 @@ const Navbar: React.FC = () => {
                     <div className="flex justify-between  w-full">
                         <div className="flex-shrink-0 p-1 justify-center">
                             <NavLink to="/" className="text-xl font-bold ">
-                                <img className="w-44 h-44 -mt-16" src='/logo.png' alt="" />
+                                <img className="w-44 h-44 -mt-16" src="/logo.png" alt="" />
                             </NavLink>
                         </div>
                         <div className="hidden md:ml-6 md:flex z-0 md:space-x-2 md:p-4 md:justify-end md:w-[800px]">

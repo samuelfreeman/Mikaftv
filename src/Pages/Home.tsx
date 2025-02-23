@@ -1,4 +1,4 @@
-import Navbar from '../assets/Navbar'
+import Navbar from './components/Navbar'
 
 
 import Hero from './components/Hero'
@@ -29,7 +29,7 @@ const Home = () => {
 
           <VideoDisplay category={selectedCategory} />
         </div>
-        <TelemarketPromotion />
+          <TelemarketPromotion />
         <Location />
         <Footer />
       </div>
