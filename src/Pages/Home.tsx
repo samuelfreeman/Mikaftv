@@ -9,7 +9,7 @@ import Footer from './components/Footer'
 import VideoDisplay from './components/ImageGallery'
 import { useState } from 'react'
 import Controls from './components/SubNav'
-import Location from './components/Location'
+
 // import Location from './Location'
 
 const Home = () => {

@@ -1,6 +1,7 @@
 import { CircleDot } from "lucide-react";
 import { programes } from "./data";
 
+
 const Shows = () => {
   return (
     <div>
@@ -8,11 +9,10 @@ const Shows = () => {
         {programes.map((data) => (
           <div
             key={data.id}
-            className={` md:px-16 my-14  px-3 ${
-              data.isLeft
-                ? " flex md:flex-row-reverse flex-col-reverse gap-10"
+            className={` md:px-16 my-14  px-3 ${data.isLeft
+                ? " flex md:flex-row-reverse flex-col gap-10"
                 : "md:flex gap-10"
-            }`}
+              }`}
           >
             {/* Content */}
             <div className="border-b-2 border-[#BFBFBF] py-3 w-full md:w-3/5">
@@ -39,7 +39,7 @@ const Shows = () => {
                   <ul>
                     {data.list.map((list, index) => (
                       <li key={index} className="flex gap-2 items-center">
-                        <CircleDot size={20} className="text"/>
+                        <CircleDot size={20} className="text" />
                         {list}
                       </li>
                     ))}
@@ -57,7 +57,16 @@ const Shows = () => {
             </div>
             {/* Image */}
             <div className="md:w-2/5 my-5 md:my-0">
-              <img src={data.imageUrl} alt="" />
+              {data.type === "image" ? (
+                <img src={data.mediaUrl} alt={data.title} className="w-full h-auto" />
+              ) : (
+                
+
+                <video  src={data.mediaUrl} controls className="w-full h-auto md:mt-28 rounded-md">
+                  Your browser does not support the video tag.
+                </video>
+                
+              )}
             </div>
           </div>
         ))}
