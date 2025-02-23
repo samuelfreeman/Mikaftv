@@ -1,19 +1,20 @@
 import show from "./show.png";
 import vybzone from "./VYBZONE.png";
 import programe from "./My Com,My News.png";
-import production from '../../public/production.png'
-import producer1 from '../../public/presenterproducer.png'
-import producer2 from '../../public/producerandpresenter.png'
-import producer3 from '../../public/presenterorproducer.png'
-import cinematographer from '../../public/cinematographer.png'
-import videographer from '../../public/videographer.png'
-import generalmanager from '../../public/generalmanager.jpg'
-import frontdesk1 from '../../public/frontdesk.png'
-import frontdesk2 from '../../public/front-desk.png'
-import Mcr from '../../public/mcrtechnician.png'
-import transport from '../../public/transport.png'
-import headOfAdministration from '../../public/headofadministrationandfinance.png'
-import administrator from '../../public/administrator.png'
+import production from '/production.png'
+import producer1 from '/presenterproducer.png'
+import producer2 from '/producerandpresenter.png'
+import producer3 from '/presenterorproducer.png'
+import cinematographer from '/cinematographer.png'
+import videographer from '/videographer.png'
+import generalmanager from '/generalmanager.jpg'
+import frontdesk1 from '/frontdesk.png'
+import frontdesk2 from '/front-desk.png'
+import Mcr from '/mcrtechnician.png'
+import transport from '/transport.png'
+import headOfAdministration from '/headofadministrationandfinance.png'
+import administrator from '/administrator.png'
+import ceo  from '/CEO.png'
 export {
     show, vybzone, programe
 
@@ -23,6 +24,7 @@ export const teamPics = {
     frontdesk1,
     frontdesk2,
     Mcr,
+    ceo,
     transport,
     headOfAdministration,
     administrator,

@@ -2,11 +2,11 @@
 
 const CoreValues = () => {
   return (
-    <div className="h-[190vh] -mb-20 mt-40 w-full p-10  bg-[#262626]">
-      <div className="flex gap-10 w-full justify-center ">
+    <div className="min-h-[190vh] -mb-20 mt-40 w-full p-10  bg-[#262626]">
+      <div className="md:flex  gap-10 w-full justify-center  ">
 
         {/* image  */}
-        <div className="bg-[#0E737D] w-[563px] h-[492px] rounded-md">
+        <div className="bg-[#0E737D] max-w-[563px] h-[492px] rounded-md">
 
         </div>
         {/* corevalues */}
@@ -27,7 +27,7 @@ const CoreValues = () => {
         </div>
 
       </div>
-      <div className="flex text-white space-x-16  ">
+      <div className="md:flex text-white md:space-x-16  ">
 
         {/* Our vision */}
         <div className="space-y-3">
@@ -44,10 +44,10 @@ const CoreValues = () => {
 
         </div>
       </div>
-      <div className="flex text-white   w-full gap-10  justify-between ">
+      <div className="md:flex text-white   w-full gap-10  justify-between ">
 
         {/* Our vision */}
-        <div className="space-y-3 w-2/4">
+        <div className="space-y-3 md:w-2/4">
           <h1 className="text-white text-3xl pt-10  ">Contact Details</h1>
           <div className="border-b-4   border-[#0E737D] w-16 "> </div>
           <ul className="list-none space-y-5 ">

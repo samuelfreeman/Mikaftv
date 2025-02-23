@@ -8,8 +8,8 @@ const About = () => {
     return (
         <div>
             <Navbar />
-            <div className="h-[20vh] w-full mt-52 flex flex-col space-y-7 pr-36 justify-center items-center text-center space-x-40">
-                <div> <h1 className="text-4xl font-bold pt-10 pl-32">About Us</h1></div>
+            <div className="min-h-[20vh] w-full mt-10 md:mt-52 flex flex-col space-y-7 p-4 md:pr-36 justify-center items-center text-center md:space-x-40">
+                <div> <h1 className="text-4xl font-bold pt-10  md:pl-32">About Us</h1></div>
                 <div className="text-center space-y-5 ">
                     <p>Welcome to Mikaf TV, your ultimate destination for vibrant, engaging, and commercially driven television programming. Based in Kumasi, Mikaf TV is a bilingual station that embraces Ghana’s rich cultural diversity while ensuring mass accessibility through dominant local-language content.</p>
                     <p>As a dynamic and innovative broadcaster, we are committed to entertaining, informing, and empowering our audience with top-quality content that resonates with everyday life. Our programming spans across business, lifestyle, entertainment, faith-based discussions, social issues, and more—designed to keep our viewers connected, inspired, and well-informed.</p>
