@@ -1,6 +1,8 @@
 import CoreValues from "./components/CoreValues"
 import Footer from "./components/Footer"
+import Location from "./components/Location"
 import Navbar from "./components/Navbar"
+import Newsletter from "./components/Newsletter"
 import Team from "./components/Team"
 
 
@@ -8,7 +10,7 @@ const About = () => {
     return (
         <div>
             <Navbar />
-            <div className="min-h-[20vh] w-full mt-10 md:mt-52 flex flex-col space-y-7 p-4 md:pr-36 justify-center items-center text-center md:space-x-40">
+            <div className="min-h-[20vh] w-full mt-10 md:mt-20 flex flex-col space-y-7 p-4 md:pr-36 justify-center items-center text-center md:space-x-40">
                 <div> <h1 className="text-4xl font-bold pt-10  md:pl-32">About Us</h1></div>
                 <div className="text-center space-y-5 ">
                     <p>Welcome to Mikaf TV, your ultimate destination for vibrant, engaging, and commercially driven television programming. Based in Kumasi, Mikaf TV is a bilingual station that embraces Ghana’s rich cultural diversity while ensuring mass accessibility through dominant local-language content.</p>
@@ -20,6 +22,8 @@ const About = () => {
             </div>
             <CoreValues/>
             <Team/>
+            <Location/>
+            <Newsletter/>
             <Footer />
         </div>
     )

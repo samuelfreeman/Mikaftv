@@ -2,7 +2,7 @@ import { adminTeam, managementTeam } from "./data";
 
 const Team = () => {
   return (
-    <div className="w-full min-h-[120vh] mt-32 mb-40 p-4">
+    <div className="w-full min-h-[120vh] mt-32 mb-32 p-4">
       <div className="flex flex-col justify-center items-center p-5" >
 
         <h1 className="text-3xl font-bold mb-4">Our Team</h1>

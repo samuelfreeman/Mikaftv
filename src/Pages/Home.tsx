@@ -30,7 +30,7 @@ const Home = () => {
           <VideoDisplay category={selectedCategory} />
         </div>
           <TelemarketPromotion />
-        <Location />
+        
         <Footer />
       </div>
     </div>

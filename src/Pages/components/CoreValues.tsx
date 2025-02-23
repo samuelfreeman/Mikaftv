@@ -2,11 +2,11 @@
 
 const CoreValues = () => {
   return (
-    <div className="min-h-[190vh] -mb-20 mt-40 w-full p-10  bg-[#262626]">
+    <div className="min-h-[190vh] pt-20 mt-40 w-full p-10  bg-[#262626]">
       <div className="md:flex  gap-10 w-full justify-center  ">
 
         {/* image  */}
-        <div className="bg-[#0E737D] max-w-[563px] h-[492px] rounded-md">
+        <div className="bg-[#0E737D] md:w-[563px] max-w-[563px] h-[492px] rounded-md">
 
         </div>
         {/* corevalues */}

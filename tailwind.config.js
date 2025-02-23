@@ -14,7 +14,7 @@ export default {
   		},
 		  backgroundImage: {
 			'hero-image': "url('/heroimg.svg')",
-			
+			'newsletter':"url('/newsletter.png')"
 		  },
   		colors: {
   			background: 'hsl(var(--background))',
