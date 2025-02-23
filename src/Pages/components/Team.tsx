@@ -1,23 +1,45 @@
-import { team } from "./data";
+import { team, management } from "./data";
 
 const Team = () => {
   return (
-    <div className="w-full h-[150vh] mt-32 mb-40 p-4">
-<div className="flex flex-col justify-center items-center p-5" >
+    <div className="w-full h-[150vh] mt-32 mb-40 p-4  flex  flex-col  justify-center items-center">
+      <div className="flex flex-col justify-center items-center p-5" >
 
-      <h1 className="text-3xl font-bold mb-4">Our Team</h1>
-      <div className="border-b-4   border-[#0E737D] w-20 "> </div>
-</div>
-      
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
-        {team.map((data) => (
+        <h1 className="text-3xl font-bold mb-4">Our Team</h1>
+        <div className="border-b-4   border-[#0E737D] w-20 "> </div>
+      </div>
+
+      <div className="flex justify-center w-full">
+        <div className="grid  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 justify-items-center">
+          {team.map((data) => (
+            <div
+              key={data?.id}
+              className="bg-white rounded-lg shadow-md overflow-hidden"
+            >
+              <img
+                src={data?.imageUrl}
+                alt={data?.name}
+                className="w-full h-48 object-contain"
+              />
+              <div className="p-4">
+                <h1 className="text-xl font-bold">{data?.name}</h1>
+                <p className="text-gray-600">{data?.position}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 justify-center">
+        {management.map((data) => (
           <div
             key={data?.id}
             className="bg-white rounded-lg shadow-md overflow-hidden"
           >
-            <img 
-              src={data?.imageUrl} 
-              alt={data?.name} 
+            <img
+              src={data?.imageUrl}
+              alt={data?.name}
               className="w-full h-48 object-scale-down"
             />
             <div className="p-4">

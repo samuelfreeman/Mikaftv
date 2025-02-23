@@ -1,5 +1,5 @@
 
-import Navbar from './components/Navbar'
+import Navbar from '../assets/Navbar'
 import Banner from './components/Banner'
 import Shows from './components/Shows'
 import Footer from './components/Footer'
