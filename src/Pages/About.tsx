@@ -4,10 +4,17 @@ import Location from "./components/Location"
 import Navbar from "./components/Navbar"
 import Newsletter from "./components/Newsletter"
 import Team from "./components/Team"
-
+import { motion } from "framer-motion"
 
 const About = () => {
     return (
+               <motion.div
+      initial={{ opacity: 0, x: -50 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: 50 }}
+      transition={{ duration: 0.5 }}
+      className="w-full"
+    >
         <div>
             <Navbar />
             <div className="min-h-[20vh] w-full mt-10 md:mt-20 flex flex-col space-y-7 p-4 md:pr-36 justify-center items-center text-center md:space-x-40">
@@ -26,6 +33,7 @@ const About = () => {
             <Newsletter/>
             <Footer />
         </div>
+            </motion.div>
     )
 }
 

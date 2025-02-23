@@ -1,21 +1,22 @@
 import React from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router'
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router'
 import './index.css'
 import Home from './Pages/Home'
 import CommingSoon from './Pages/CommingSoon'
 
 import Programes from './Pages/Programes'
 
-
+import { AnimatePresence } from "framer-motion";
 import About from './Pages/About'
 
 
-const App: React.FC = () => {
-
+const Application: React.FC = () => {
+  const location = useLocation();
   return (
-    <Router>
+
+    <AnimatePresence mode="wait">
       {/* <Navbar /> */}
-      <Routes>
+      <Routes location={location} key={location.pathname}>
         <Route path='/' element={<Home />} />
         <Route path='/comingsoon' element={<CommingSoon />} />
         <Route path='/comingsoon' element={<CommingSoon />} />
@@ -25,9 +26,24 @@ const App: React.FC = () => {
         <Route path='/about' element={<About />} />
       </Routes>
       {/* <SiteFooter /> */}
-    </Router>
+    </AnimatePresence>
+
   )
 }
 
 
-export default App;
+
+
+
+
+const App = () => {
+  return (
+    <Router>
+      <div>
+        <Application />
+      </div>
+    </Router>
+  )
+}
+
+export default App

@@ -9,7 +9,7 @@ import Footer from './components/Footer'
 import VideoDisplay from './components/ImageGallery'
 import { useState } from 'react'
 import Controls from './components/SubNav'
-
+import { motion } from 'framer-motion'
 // import Location from './Location'
 
 const Home = () => {
@@ -20,19 +20,27 @@ const Home = () => {
   };
   return (
     <div>
-      <Navbar />
-      <div className='h-screen'>
-        <Controls onCategoryChange={handleCategoryChange} selectedCategory={selectedCategory} />
-        <Hero />
-        <Updates />
-        <div id="target-section">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }} // Start hidden and slightly below
+        animate={{ opacity: 1, y: 0 }} // Fade in and move up
+        exit={{ opacity: 0, y: -50 }} // Fade out and move up when leaving
+        transition={{ duration: 0.5 }}
+        className="p-10"
+      >
+        <Navbar />
+        <div className='h-screen'>
+          <Controls onCategoryChange={handleCategoryChange} selectedCategory={selectedCategory} />
+          <Hero />
+          <Updates />
+          <div id="target-section">
 
-          <VideoDisplay category={selectedCategory} />
-        </div>
+            <VideoDisplay category={selectedCategory} />
+          </div>
           <TelemarketPromotion />
-        
-        <Footer />
-      </div>
+
+          <Footer />
+        </div>
+      </motion.div>
     </div>
   )
 }
