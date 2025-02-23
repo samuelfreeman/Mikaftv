@@ -25,7 +25,7 @@ const Home = () => {
         animate={{ opacity: 1, y: 0 }} // Fade in and move up
         exit={{ opacity: 0, y: -50 }} // Fade out and move up when leaving
         transition={{ duration: 0.5 }}
-        className="p-10"
+        
       >
         <Navbar />
         <div className='h-screen'>
