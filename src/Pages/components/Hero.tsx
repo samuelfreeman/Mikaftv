@@ -24,7 +24,7 @@ const Hero = () => {
                     <CarouselContent>
                         {/* <div className="absolute top-0 left-0 ml-1 w-[450px] rounded-3xl h-[400px] bg-black opacity-100">
   </div> */}
-                        <CarouselItem><video src="https://res.cloudinary.com/dgmh9hpsj/video/upload/v1740411113/llqvujkym25ulc8matoi.mp4" autoPlay muted loop controls ></video></CarouselItem>
+                        <CarouselItem><video src="../../videos/ABAKCS3M.MP4" autoPlay muted loop controls ></video></CarouselItem>
                         <CarouselItem><video src="https://res.cloudinary.com/dgmh9hpsj/video/upload/v1740411285/l1stpahtrfbueyao1mcd.mp4" autoPlay muted loop controls ></video></CarouselItem>
 
                         {/* Content */}
