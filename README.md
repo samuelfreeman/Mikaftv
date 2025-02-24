@@ -1,4 +1,4 @@
-# Mikaf TV Website - Frontend Repository [www.mikaftvonline.com]
+# Mikaf TV Website - Frontend Repository [https://mikaftvonline.com]
 
 Welcome to the **Mikaf TV Website Frontend Repository**. This project serves as the official web platform for Mikaf TV, a dynamic bilingual television station based in Kumasi, Ghana. The website delivers engaging content, program schedules, and multimedia experiences tailored to a diverse audience.
 
