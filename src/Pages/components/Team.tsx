@@ -13,13 +13,13 @@ const Team = () => {
         {adminTeam.map((data) => (
           <div
             key={data?.id}
-            className="bg-white rounded-lg m-8 w-60 shadow-md overflow-hidden"
+            className="bg-white rounded-lg m-8 w-72 shadow-md overflow-hidden"
 
           >
             <img
               src={data?.imageUrl}
               alt={data?.name}
-              className="w-full h-48 object-scale-down"
+              className="w-full h-52 object-scale-down"
             />
             <div className="p-4">
               <h1 className="text-xl font-bold">{data?.name}</h1>
@@ -33,12 +33,12 @@ const Team = () => {
         {managementTeam.map((data) => (
           <div
             key={data?.id}
-            className="bg-white rounded-lg m-8 w-60 shadow-md overflow-hidden"
+            className="bg-white rounded-lg m-8 w-72 shadow-md overflow-hidden"
           >
             <img
               src={data?.imageUrl}
               alt={data?.name}
-              className="w-full h-48 object-scale-down"
+              className="w-full h-52 object-scale-down"
             />
             <div className="p-4">
               <h1 className="text-xl font-bold">{data?.name}</h1>

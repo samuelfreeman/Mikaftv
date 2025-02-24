@@ -54,16 +54,14 @@ const Navbar: React.FC = () => {
                             </NavLink>
                         </div>
                         <div className="hidden md:ml-6 md:flex z-0 md:space-x-2 md:p-4 md:justify-end md:w-[800px]">
-                            <Button variant="link"><NavLink to="/" className="text-gray-900 hover:text-gray-700">News</NavLink></Button>
+                            <Button variant="link"><NavLink to="/" className="text-gray-900 hover:text-gray-700">Home</NavLink></Button>
 
                             <Button variant="link"> <NavLink to="/programmes">Programmes</NavLink></Button>
                             <Button variant="link"><NavLink to="/about" className="text-gray-900 hover:text-gray-700">About Us</NavLink></Button>
-                            <Button variant="link"><NavLink to="/comingsoon" className="text-gray-900 hover:text-gray-700">Business</NavLink></Button>
-                            <Button variant="link"> <NavLink to="/comingsoon" className="text-gray-900 hover:text-gray-700">Politics</NavLink></Button>
-                            <Button variant="link"> <NavLink to="/comingsoon" className="text-gray-900 hover:text-gray-700">Video</NavLink></Button>
+
                             <Button variant="link" > <div className='flex '>
                                 <img src="/play-button.png" className='px-2' width={"40"} height={"20"} alt="" />
-                                <NavLink to="/live"> Live</NavLink>
+                                <NavLink to="/comingsoon"> Live</NavLink>
                             </div>
                             </Button>
                         </div>
@@ -86,16 +84,16 @@ const Navbar: React.FC = () => {
             {isOpen && (
                 <div className="md:hidden z-100">
                     <div className="w-full flex  flex-col items-center sm:px-3 p-4 space-y-2">
-                        <Button variant="link"><NavLink to="/" className="text-gray-900 hover:text-gray-700">News</NavLink></Button>
+                        <Button variant="link"><NavLink to="/" className="text-gray-900 hover:text-gray-700">Home</NavLink></Button>
 
                         <Button variant="link"><NavLink to="/about" className="text-gray-900 hover:text-gray-700">About Us</NavLink></Button>
                         <Button variant="link"><NavLink to="/programmes">Programmes</NavLink></Button>
-                        <Button variant="link"> <NavLink to="/comingsoon" className="text-gray-900 hover:text-gray-700">Video</NavLink></Button>
-                        <Button variant="link"><NavLink to="/comingsoon" className="text-gray-900 hover:text-gray-700">Business</NavLink></Button>
-                        <Button variant="link"> <NavLink to="/comingsoon" className="text-gray-900 hover:text-gray-700">Politics</NavLink></Button>
+
+
+
                         <Button variant="link" > <div className='flex '>
                             <img src="/play-button.png" className='px-2' width={"40"} height={"20"} alt="" />
-                            <NavLink to="/live"> Live</NavLink>
+                            <NavLink to="/comingsoon"> Live</NavLink>
                         </div>
                         </Button>
 
