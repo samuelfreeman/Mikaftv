@@ -7,8 +7,8 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel"
 
-import abakcsem from '@/assets/ABAKCS3M.mp4'
-import  vybzone from "@/assets/VYBZONE360.mp4"
+import abakcsem from '../../assets/ABAKCS3M.mp4'
+import  vybzone from "../../assets/VYBZONE360.mp4"
 const Hero = () => {
     return (
         <div className='mb-10 mt-24 md:mt-28  m-4 flex flex-col md:flex-row justify-between '>

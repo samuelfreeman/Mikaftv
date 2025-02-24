@@ -15,10 +15,10 @@ import transport from '/transport.png'
 import headOfAdministration from '/headofadministrationandfinance.png'
 import administrator from '/administrator.png'
 import ceo  from '/CEO.png'
-import VybeZoneVideo  from '../../videos/VYBZONE360.mp4'
-import Mycommunity  from '../../videos/ABAKCS3M.mp4'
+
+
 export {
-    show, vybzone, programe,VybeZoneVideo,Mycommunity
+    show, vybzone, programe
 
 }
 export const teamPics = {
