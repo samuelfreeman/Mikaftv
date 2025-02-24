@@ -7,9 +7,11 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel"
 
+import abakcsem from '@/assets/ABAKCS3M.mp4'
+import  vybzone from "@/assets/VYBZONE360.mp4"
 const Hero = () => {
     return (
-        <div className='mb-10 mt-24 md:mt-28  flex flex-col md:flex-row justify-between '>
+        <div className='mb-10 mt-24 md:mt-28  m-4 flex flex-col md:flex-row justify-between '>
 
             <div className=' w-full md:w-5/12 m-5 md:m-14 md:mt-[16px]'>
                 <h1 className='text-3xl md:text-5xl font-bold py-2'>Bringing Stories to Life,</h1>
@@ -24,8 +26,8 @@ const Hero = () => {
                     <CarouselContent>
                         {/* <div className="absolute top-0 left-0 ml-1 w-[450px] rounded-3xl h-[400px] bg-black opacity-100">
   </div> */}
-                        <CarouselItem><video src="../../videos/ABAKCS3M.mp4" autoPlay muted loop controls ></video></CarouselItem>
-                        <CarouselItem><video src="../../videos/VYBZONE360.mp4" autoPlay muted loop controls ></video></CarouselItem>
+                        <CarouselItem><video src={abakcsem} autoPlay muted loop controls ></video></CarouselItem>
+                        <CarouselItem><video src={vybzone} autoPlay muted loop controls ></video></CarouselItem>
 
                         {/* Content */}
 
