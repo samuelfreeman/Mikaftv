@@ -8,7 +8,8 @@ import {
 } from "@/components/ui/carousel"
 
 import abakcsem from '../../assets/ABAKCS3M.mp4'
-import  vybzone from "../../assets/VYBZONE360.mp4"
+import vybzone from "../../assets/VYBZONE360.mp4"
+import lifepills from '../../assets/LIFEPILLS.mp4'
 const Hero = () => {
     return (
         <div className='mb-10 mt-24 md:mt-28  m-4 flex flex-col md:flex-row justify-between '>
@@ -28,7 +29,7 @@ const Hero = () => {
   </div> */}
                         <CarouselItem><video src={abakcsem} autoPlay muted loop controls ></video></CarouselItem>
                         <CarouselItem><video src={vybzone} autoPlay muted loop controls ></video></CarouselItem>
-
+                        <CarouselItem><video src={lifepills} autoPlay muted loop controls ></video></CarouselItem>
                         {/* Content */}
 
 
