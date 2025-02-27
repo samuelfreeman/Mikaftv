@@ -1,37 +1,55 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router'
-import './index.css'
-import Home from './Pages/Home'
-import CommingSoon from './Pages/CommingSoon'
-
-import Programes from './Pages/Programes'
 
 import { AnimatePresence } from "framer-motion";
-import About from './Pages/About'
+import { Progress } from "@/components/ui/progress"; // Import ShadCN progress bar
 
+import "./index.css";
+import Home from "./Pages/Home";
+import CommingSoon from "./Pages/CommingSoon";
+import Programes from "./Pages/Programes";
+import About from "./Pages/About";
 
 const Application: React.FC = () => {
+  const [progress, setProgress] = useState(0);
+  const [isLoading, setLoading] = useState(true);
   const location = useLocation();
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setProgress((prev) => (prev < 100 ? prev + 20 : 100));
+    }, 400);
+
+    setTimeout(() => {
+      setLoading(false);
+      clearInterval(interval);
+    }, 2000); // Simulates 2s loading time
+
+    return () => clearInterval(interval);
+  }, []);
+
+  if (isLoading) {
+    return (
+      <div className="flex flex-col items-center justify-center h-screen w-full bg-gray-100">
+        <img src="/logo.png" alt="Logo" className="w-52 h-52   mb-4" />
+        <Progress value={progress} className="w-1/2 bg-[#681FA3]" />
+      </div>
+    );
+  }
+
   return (
-
     <AnimatePresence mode="wait">
-      {/* <Navbar /> */}
       <Routes location={location} key={location.pathname}>
-        <Route path='/' element={<Home />} />
-        <Route path='/comingsoon' element={<CommingSoon />} />
-        <Route path='/comingsoon' element={<CommingSoon />} />
-        <Route path='/comingsoon' element={<CommingSoon />} />
-        <Route path='/comingsoon' element={<CommingSoon />} />
-        <Route path='/programmes' element={<Programes />} />
-        <Route path='/about' element={<About />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/comingsoon" element={<CommingSoon />} />
+        <Route path="/programmes" element={<Programes />} />
+        <Route path="/about" element={<About />} />
       </Routes>
-      {/* <SiteFooter /> */}
     </AnimatePresence>
+  );
+};
 
-  )
-}
-
-
+ 
 
 
 
