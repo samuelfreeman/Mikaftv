@@ -106,7 +106,7 @@ const SiteFooter =() =>{
             </div>
             <div className="h-20 w-full flex justify-center border-t-2 p-7">
 
-                <p className="text-xs text-md font-bold ">COPYRIGHT &copy;
+                <p className="text-xs text-md font-bold text-center ">COPYRIGHT &copy;
                     2025 MikafTV. All rights reserved.</p>
             </div>
         </footer>

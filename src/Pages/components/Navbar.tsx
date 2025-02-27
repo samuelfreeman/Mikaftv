@@ -8,47 +8,22 @@ import { Button } from '@/components/ui/button';
 
 const Navbar: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
-    // const [showRegister, setShowUp] = useState(true)
-    // const [showLogin, setShowLogin] = useState(true)
-
-    // const navigate = useNavigate()
+  
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
 
     useEffect(() => {
 
-        // const user = localStorage.getItem("user")
-        // if (user) {
-        //     setShowUp(false);
-        //     setShowLogin(false);
-
-        // }
-        // else {
-        //     setShowUp(true);
-        //     setShowLogin(true);
-
-        // }
-
-
+ 
     }, []);
-    // const handleClick = () => {
-    //     const token = localStorage.getItem("token");
-
-    //     if (token) {
-
-    //         localStorage.removeItem("token");
-    //         navigate("/login");
-    //     }
-    // };
-
-
+ 
     return (
         <nav className="fixed top-0 left-0 right-0 z-50 bg-white  border-gray-200 ">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between h-16">
                     <div className="flex justify-between  w-full">
-                        <div className="flex-shrink-0 p-1 justify-center">
+                        <div className="flex-shrink-0 p-2 justify-center">
                             <NavLink to="/" className="text-xl font-bold ">
                                 <img className="w-44 h-44 -mt-16" src="/logo.png" alt="" />
                             </NavLink>
@@ -97,18 +72,7 @@ const Navbar: React.FC = () => {
                         </div>
                         </Button>
 
-                        {/* {
-                            showRegister && showLogin && (
-                                <div className='w-full '>
-                                    <Button className="  w-full  bg-black text-white"><NavLink to="/login">Login</NavLink></Button>
-                                </div>
-                            )}
-
-                        {
-                            !showLogin && !showRegister && (
-                                // <Button className="mr-4 w-full bg-black text-white" onClick={handleClick}>Logout</Button>
-                                )} */}
-
+                 
 
                     </div>
                 </div>

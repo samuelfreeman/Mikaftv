@@ -3,7 +3,7 @@
 const Location = () => {
   return (
     
-     <div className="w-full mt-10  h-[70vh]  md:min-h-[160vh]    md:max-h-[80vh] md:mt-0 ">
+     <div className="w-full mt-10  min-h-[70vh]  md:min-h-[160vh]    md:max-h-[80vh] md:mt-0 ">
 
      
     <div className=" flex justify-center flex-col items-center">

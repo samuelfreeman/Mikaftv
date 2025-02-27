@@ -12,7 +12,7 @@ import vybzone from "../../assets/VYBZONE360.mp4"
 import lifepills from '../../assets/LIFEPILLS.mp4'
 const Hero = () => {
     return (
-        <div className='mb-10 mt-24 md:mt-28  m-4 flex flex-col md:flex-row justify-between '>
+        <div className='mb-10 mt-24 md:mt-28  m-7 flex flex-col md:flex-row justify-between '>
 
             <div className=' w-full md:w-5/12 m-5 md:m-14 md:mt-[16px]'>
                 <h1 className='text-3xl md:text-5xl font-bold py-2'>Bringing Stories to Life,</h1>

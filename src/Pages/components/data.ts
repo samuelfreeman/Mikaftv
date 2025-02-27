@@ -121,7 +121,7 @@ export const managementTeam = [
     {
         id: 5,
         name: 'Francis Asare Darko',
-        position: '',
+        position: 'Videographer',
         imageUrl: teamPics.videographer
     },
     {

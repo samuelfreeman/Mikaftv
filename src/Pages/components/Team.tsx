@@ -5,10 +5,10 @@ const Team = () => {
     <div className="w-full min-h-[120vh] mt-32 mb-32 p-4">
       <div className="flex flex-col justify-center items-center p-5" >
 
-        <h1 className="text-3xl font-bold mb-4">Our Team</h1>
+        <h1 className="text-3xl font-bold mb-4 text-center">Meet Our Team</h1>
         <div className="border-b-4   border-[#0E737D] w-20 "> </div>
       </div>
-      <h1 className="text-center font-bold">Management</h1>
+      <h1 className="text-center text-lg py-6 font-bold">Management</h1>
       <div className=" flex justify-center items-center  flex-wrap ">
         {adminTeam.map((data) => (
           <div
@@ -28,7 +28,7 @@ const Team = () => {
           </div>
         ))}
       </div>
-      <h1 className="text-center font-bold">Meet the Hosts & Anchors</h1>
+      <h1 className="text-center text-lg font-bold py-6">Meet the Hosts & Anchors</h1>
       <div className=" flex justify-center items-center  flex-wrap ">
         {managementTeam.map((data) => (
           <div
