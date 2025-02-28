@@ -68,7 +68,7 @@ const Navbar: React.FC = () => {
 
                         <Button variant="link" > <div className='flex '>
                             <img src="/play-button.png" className='px-2' width={"40"} height={"20"} alt="" />
-                            <NavLink to="/comingsoon"> Live</NavLink>
+                            <NavLink to="/comingsoon" className="text-gray-400 hover:text-gray-700"> Live</NavLink>
                         </div>
                         </Button>
 
