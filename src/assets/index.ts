@@ -19,10 +19,11 @@ import img1 from './img.png'
 import img2 from './Mikaf TV Promo.jpg'
 import img3 from './Mikaf TV Music.jpg'
 import img4 from './Mikaf TV Entertainment.jpg'
+import logopic from './mikaftvimg.jpg'
 
 
 export {
-    show, vybzone, programe, img1, img2, img3, img4
+    show, vybzone, programe, img1, img2, img3, img4,logopic
 
 
 }

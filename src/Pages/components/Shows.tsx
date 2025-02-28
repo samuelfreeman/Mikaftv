@@ -32,9 +32,9 @@ const Shows = () => {
                   </h1>
                   <p className="border-b-2 w-[20vw] "></p>
                   {/* description */}
-                  <p className="text-md text-justify">{data.des}</p>
+                  <p className="text-sm md:text-lg text-justify">{data.des}</p>
                   {/* const */}
-                  <h3 className="font-medium md:text-xl">{data.subtitle}:</h3>
+                  <h3 className="font-medium md:text-lg">{data.subtitle}:</h3>
                   {/* List of expectation */}
                   <ul>
                     {data.list.map((list, index) => (
@@ -45,7 +45,7 @@ const Shows = () => {
                     ))}
                   </ul>
                   {/* subdescri[ption] */}
-                  <p className="text-lg ">{data.content}</p>
+                  <p className="text-sm lg:text-lg ">{data.content}</p>
                 </div>
                 {/* date */}
                 <div className="text-[#696969] font-medium text-lg flex space-x-3">
