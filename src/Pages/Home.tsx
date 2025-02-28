@@ -10,6 +10,9 @@ import VideoDisplay from './components/ImageGallery'
 import { useState } from 'react'
 import Controls from './components/SubNav'
 import { motion } from 'framer-motion'
+import ExpandReach from './components/ExpandReach'
+import ImageSlider from './components/Curosel'
+import Promo from './components/Promo'
 // import Location from './Location'
 
 const Home = () => {
@@ -36,7 +39,10 @@ const Home = () => {
 
             <VideoDisplay category={selectedCategory} />
           </div>
-          <TelemarketPromotion />
+        <ExpandReach/>
+        <ImageSlider/>
+          
+        <Promo/>
 
           <Footer />
         </div>

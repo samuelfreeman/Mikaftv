@@ -14,11 +14,16 @@ import Mcr from '/mcrtechnician.png'
 import transport from '/transport.png'
 import headOfAdministration from '/headofadministrationandfinance.png'
 import administrator from '/administrator.png'
-import ceo  from '/CEO.png'
+import ceo from '/CEO.png'
+import img1 from './img.png'
+import img2 from './Mikaf TV Promo.jpg'
+import img3 from './Mikaf TV Music.jpg'
+import img4 from './Mikaf TV Entertainment.jpg'
 
 
 export {
-    show, vybzone, programe
+    show, vybzone, programe, img1, img2, img3, img4
+
 
 }
 export const teamPics = {

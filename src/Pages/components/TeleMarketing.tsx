@@ -10,14 +10,14 @@ export default function TelemarketPromotion() {
 
         {/* Text Section */}
         <div className="space-y-6 border-b-2 pb-4">
-          <h2 className="text-3xl sm:text-4xl font-bold   border-l-4 p-2 border-[#681FA3]">
+          <h2 className=" text-2xl md:text-3xl  font-bold   border-l-4 p-2 border-[#681FA3]">
             TELEMARKET PROMOTION
           </h2>
           <p className="text-lg  ">
             Your Brand deserves the Spotlight - Put your business in the spotlight!
           </p>
           <div className="border-b-4   border-[#681FA3] w-56 "> </div>
-          <p className="">
+          <p className="text-sm lg:text-lg">
             Boost your business with Mikaf TV’s all-new TeleMarket Promotion! Get
             the widest reach at the lowest rates ever and showcase your goods and
             services to a massive audience. For 3 months, enjoy premium TV
@@ -31,19 +31,19 @@ export default function TelemarketPromotion() {
               📢 Why Choose TeleMarket Promotion?
             </h3>
             <ul className=" list-inside  space-y-2">
-              <li> <span className="text-[#681FA3] text-xl pr-2">{"> "}</span> Unmatched TV exposure at unbeatable rates.</li>
-              <li> <span className="text-[#681FA3] text-xl pr-2">{"> "}</span> Maximum visibility for your products and services.</li>
-              <li> <span className="text-[#681FA3] text-xl pr-2">{"> "}</span> Reach thousands of potential customers daily.</li>
+              <li> <span className="text-[#681FA3] text-sm lg:text-lg pr-2">{"> "}</span> Unmatched TV exposure at unbeatable rates.</li>
+              <li> <span className="text-[#681FA3] text-sm lg:text-lg pr-2">{"> "}</span> Maximum visibility for your products and services.</li>
+              <li> <span className="text-[#681FA3] text-sm lg:text-lg pr-2">{"> "}</span> Reach thousands of potential customers daily.</li>
             </ul>
           </div>
 
           {/* Call to Action */}
-          <p className="">
+          <p className="text-sm lg:text-lg">
             Our TeleMarket Promotion is set to revolutionize advertising by
             offering businesses an affordable way to showcase their products and
             services to a massive audience.
           </p>
-          <p className=" font-semibold">
+          <p className=" text-sm lg:text-lg font-semibold">
             Limited Spaces Available! Secure your slot now and take your business
             to the next level.  <Button variant="link"><NavLink to="/comingsoon" className="text-gray-900 hover:text-gray-700 text-lg font-bold">Terms & Conditions Apply.</NavLink></Button>
           </p>

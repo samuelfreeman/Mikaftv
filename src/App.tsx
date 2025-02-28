@@ -23,7 +23,7 @@ const Application: React.FC = () => {
     setTimeout(() => {
       setLoading(false);
       clearInterval(interval);
-    }, 2000); // Simulates 2s loading time
+    }, 2000); 
 
     return () => clearInterval(interval);
   }, []);
