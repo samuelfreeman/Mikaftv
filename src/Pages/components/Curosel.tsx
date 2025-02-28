@@ -15,6 +15,7 @@ export default function ImageSlider() {
     [Autoplay({ delay: 5000, stopOnInteraction: false })], // Add autoplay plugin
   )
 
+  console.log(emblaRef,emblaApi)
   const scrollTo = useCallback(
     (index: number) => {
       if (!api) return
