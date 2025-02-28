@@ -1,78 +1,67 @@
-import { CircleDot } from "lucide-react";
-import { programes } from "./data";
-
+import { CircleDot } from "lucide-react"
+import { programes } from "./data"
 
 const Shows = () => {
   return (
-    <div>
-      <div>
-        {programes.map((data) => (
-          <div
-            key={data.id}
-            className={` md:px-16 my-14  px-3 ${data.isLeft
-                ? " flex md:flex-row-reverse flex-col gap-10"
-                : "md:flex gap-10"
-              }`}
-          >
-            {/* Content */}
-            <div className="border-b-2 border-[#BFBFBF] py-3 w-full md:w-3/5">
-              {/* const title */}
-              <div className="border-l-4 pt-3 mb-4 pl-2 border-[#198587] ">
-                <h2 className="font-semibold text-lg md:text-xl">
-                  MUST WATCH SHOW
-                </h2>
-              </div>
-              {/* Main content */}
-              <div className="space-y-3">
-                {/* title */}
-                <div className="space-y-3">
-                  {" "}
-                  <h1 className="font-bold text-md md:text-[22px] ">
-                    <i>{data.title}</i>
-                  </h1>
-                  <p className="border-b-2 w-[20vw] "></p>
-                  {/* description */}
-                  <p className="text-sm md:text-lg text-justify">{data.des}</p>
-                  {/* const */}
-                  <h3 className="font-medium md:text-lg">{data.subtitle}:</h3>
-                  {/* List of expectation */}
-                  <ul>
-                    {data.list.map((list, index) => (
-                      <li key={index} className="flex gap-2 items-center">
-                        <CircleDot size={20} className="text" />
-                        {list}
-                      </li>
-                    ))}
-                  </ul>
-                  {/* subdescri[ption] */}
-                  <p className="text-sm lg:text-lg ">{data.content}</p>
-                </div>
-                {/* date */}
-                <div className="text-[#696969] font-medium text-lg flex space-x-3">
-                  <p>{data.date}</p>
-                  <p className="border border-[#585757]"></p>
-                  <p>Coming Soon</p>
-                </div>
-              </div>
+    <div className="container mx-auto px-4 py-8">
+      {programes.map((data) => (
+        <div
+          key={data.id}
+          className={`flex flex-col md:flex-row gap-8 md:gap-12 my-16 ${data.isLeft ? "md:flex-row-reverse" : ""}`}
+        >
+          {/* Content */}
+          <div className="flex-1 border-b-2 border-[#BFBFBF] pb-6">
+            {/* Must Watch Show */}
+            <div className="border-l-4 border-[#198587] pl-4 mb-6">
+              <h2 className="font-semibold text-lg md:text-xl">MUST WATCH SHOW</h2>
             </div>
-            {/* Image */}
-            <div className="md:w-2/5 my-5 md:my-0">
-              {data.type === "image" ? (
-                <img src={data.mediaUrl} alt={data.title} className="w-full h-auto" />
-              ) : (
-                
-
-                <video  src={data.mediaUrl} controls className="w-full h-auto md:mt-28 rounded-md">
-                  Your browser does not support the video tag.
-                </video>
-                
-              )}
+            {/* Main content */}
+            <div className="space-y-4">
+              {/* Title */}
+              <h1 className="font-bold text-2xl md:text-3xl italic">{data.title}</h1>
+              <div className="w-24 border-b-2 border-[#BFBFBF] mb-4"></div>
+              {/* Description */}
+              <p className="text-base md:text-lg text-justify">{data.des}</p>
+              {/* Subtitle */}
+              <h3 className="font-medium text-lg md:text-xl mt-6 mb-2">{data.subtitle}:</h3>
+              {/* List of expectations */}
+              <ul className="space-y-2 mb-4">
+                {data.list.map((list, index) => (
+                  <li key={index} className="flex items-center gap-3">
+                    <CircleDot size={16} className="text-[#198587] flex-shrink-0" />
+                    <span className="text-base md:text-lg">{list}</span>
+                  </li>
+                ))}
+              </ul>
+              {/* Sub-description */}
+              <p className="text-base md:text-lg">{data.content}</p>
+              {/* Date and Coming Soon */}
+              <div className="text-[#696969] font-medium text-base md:text-lg flex items-center space-x-4 mt-6">
+                <p>{data.date}</p>
+                <div className="h-5 border-l border-[#585757]"></div>
+                <p>Coming Soon</p>
+              </div>
             </div>
           </div>
-        ))}
-      </div>
+          {/* Image/Video */}
+          <div className="flex-1 md:max-w-[35%]">
+            {data.type === "image" ? (
+              <img
+                src={data.mediaUrl || "/placeholder.svg"}
+                alt={data.title}
+                className="w-full h-auto rounded-md shadow-md"
+              />
+            ) : (
+              <video src={data.mediaUrl} controls className="w-full h-auto rounded-md shadow-md">
+                Your browser does not support the video tag.
+              </video>
+            )}
+          </div>
+        </div>
+      ))}
     </div>
-  );
-};
+  )
+}
 
-export default Shows;
+export default Shows
+

@@ -15,7 +15,7 @@ const Promo = () => {
             <p className='text-sm md:text-lg'>
 
                 Ready to take your business to the next level? Partner with Mikaf TV today and let’s make your brand the talk of the town!
-                Limited Spaces Available! Secure your slot now and take your business to the next level. <Button variant={"link"} className='font-semibold text-md'>Terms & Conditions Apply. </Button></p>
+                Limited Spaces Available! Secure your slot now and take your business to the next level. <Button variant={"link"} className='font-semibold text-md'><NavLink to={"/termsandconditions"}>Terms & Conditions Apply.</NavLink> </Button></p>
             <div className='border-t-2 pt-5 '>
                 <p className='text-sm md:text-lg'>Call us now at <span className='text-[#24918D]'>0322009247, 0556818815.</span>  </p>
                 <p className='text-sm md:text-lg'>Visit us in person — find our location on the map on our <Button variant={"link"} className='-px-1  text-md text-[#24918D]'><NavLink to={"/about"}>About Us</NavLink> </Button> page. </p>

@@ -23,23 +23,23 @@ const SiteFooter =() =>{
 
                             <ul className="mt-6 space-y-4 text-sm">
                                 <li>
-                                    <a href="#" className="text-gray-700 transition hover:opacity-75"> About Us </a>
+                                    <a href="/about" className="text-gray-700 transition hover:opacity-75"> About Us </a>
                                 </li>
 
                                 <li>
-                                    <a href="#" className="text-gray-700 transition hover:opacity-75"> Terms and Conditions </a>
+                                    <a href="/termsandconditions" className="text-gray-700 transition hover:opacity-75"> Terms and Conditions </a>
                                 </li>
 
                                 <li>
-                                    <a href="#" className="text-gray-700 transition hover:opacity-75"> Privacy Policy </a>
+                                    <a href="/privacypolicy" className="text-gray-700 transition hover:opacity-75"> Privacy Policy </a>
                                 </li>
 
                                 <li>
-                                    <a href="#" className="text-gray-700 transition hover:opacity-75">Sitemap </a>
+                                    <a href="/about" className="text-gray-700 transition hover:opacity-75">Sitemap </a>
                                 </li>
 
                                 <li>
-                                    <a href="#" className="text-gray-700 transition hover:opacity-75"> Advertise with Us </a>
+                                    <a href="/about" className="text-gray-700 transition hover:opacity-75"> Advertise with Us </a>
                                 </li>
                             </ul>
                         </div>
@@ -49,15 +49,15 @@ const SiteFooter =() =>{
 
                             <ul className="mt-6 space-y-4 text-sm">
                                 <li>
-                                    <a href="#" className="text-gray-700 transition hover:opacity-75"> Life Pills </a>
+                                    <a href="/programmes" className="text-gray-700 transition hover:opacity-75"> Life Pills </a>
                                 </li>
 
                                 <li>
-                                    <a href="#" className="text-gray-700 transition hover:opacity-75"> VybZone 360 </a>
+                                    <a href="/programmes" className="text-gray-700 transition hover:opacity-75"> VybZone 360 </a>
                                 </li>
 
                                 <li>
-                                    <a href="#" className="text-gray-700 transition hover:opacity-75">My Community My News </a>
+                                    <a href="/programmes" className="text-gray-700 transition hover:opacity-75">My Community My News </a>
                                 </li>
                             </ul>
                         </div>

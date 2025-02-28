@@ -61,7 +61,7 @@ const CoreValues = () => {
             <li className='text-white text-sm lg:text-lg '><span className="font-bold" >Location:</span>  Patasi - Kumasi, Near Movie House Plaza.</li>
             <li className='text-white text-sm lg:text-lg'><span className="font-bold" >Office Number:</span> 0322009247, +233 (0) 556818815</li>
 
-            <li className='text-white text-sm lg:text-lg'><span className="font-bold" >Email Address:</span>  info@mikaftv.</li>
+            <li className='text-white text-sm lg:text-lg'><span className="font-bold" >Email Address:</span>  info@mikaftvonline.</li>
 
           </ul>
 

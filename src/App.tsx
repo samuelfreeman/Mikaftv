@@ -9,6 +9,8 @@ import Home from "./Pages/Home";
 import CommingSoon from "./Pages/CommingSoon";
 import Programes from "./Pages/Programes";
 import About from "./Pages/About";
+import TermsAndConditions from "./Pages/components/TermsandConditions";
+import PrivacyPolicy from "./Pages/components/PrivacyPolicy";
 
 const Application: React.FC = () => {
   const [progress, setProgress] = useState(0);
@@ -44,6 +46,8 @@ const Application: React.FC = () => {
         <Route path="/comingsoon" element={<CommingSoon />} />
         <Route path="/programmes" element={<Programes />} />
         <Route path="/about" element={<About />} />
+        <Route path = "/termsandconditions" element={<TermsAndConditions/>} />
+        <Route path = "/privacypolicy" element={<PrivacyPolicy/>} />
       </Routes>
     </AnimatePresence>
   );
