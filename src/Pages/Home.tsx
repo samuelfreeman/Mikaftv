@@ -34,11 +34,11 @@ const Home = () => {
         <div className='h-screen'>
           <Controls onCategoryChange={handleCategoryChange} selectedCategory={selectedCategory} />
           <Hero />
-          <Updates />
-          <div id="target-section">
+          {/* <Updates /> */}
+          {/* <div id="target-section">
 
             <VideoDisplay category={selectedCategory} />
-          </div>
+          </div> */}
         <ExpandReach/>
         <ImageSlider/>
           

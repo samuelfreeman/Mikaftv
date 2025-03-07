@@ -45,7 +45,7 @@ export default function ImageSlider() {
   const images = [img1, img2, img3, img4, img2, img3, img4]
 
   return (
-    <div className="w-full max-h-[70vh] md:min-h-[80vh] mx-auto px-4 border pt-10 ">
+    <div className="w-full min-h-[45vh] max-h-[90vh] md:min-h-[80vh] mx-auto px-4 border pt-10 ">
       <Carousel
         setApi={setApi}
         opts={{
@@ -62,7 +62,7 @@ export default function ImageSlider() {
       >
         <CarouselContent>
           {images.map((src, index) => (
-            <CarouselItem key={index} className="  md:basis-1/2 lg:basis-1/5 transition-all duration-300">
+            <CarouselItem key={index} className=" sm:basis-1/3   md:basis-1/2 lg:basis-1/5 transition-all duration-300">
               <div
                 className={cn(
                   "p-1 transition-all duration-300",

@@ -19,28 +19,24 @@ const Hero = () => {
                 <h1 className='text-xl md:text-2xl font-semibold pb-5'>Live updates, Exclusive Reports & trending News.</h1>
                 <p className='text-sm lg:text-md'>Welcome to a dynamic platform where compelling stories unfold, bringing you real-time updates, in-depth exclusive reports, and the latest trends that shape our world. Stay informed, stay inspired, and be part of the conversation.</p>
             </div>
-            <div className=" flex flex-col mx-2  p-1 md:p-2   rounded-md border  md:block md:relative md:w-[550px] md:h-[300px] ')] md:bg-cover md:mr-20  md:rounded-lg">
+            <div className=" flex flex-col mx-2  p-1 md:p-2   rounded-md border  md:block md:relative md:w-[550px] md:h-[320px] ')] md:bg-cover md:mr-20  md:rounded-lg">
 
                 {/* Black Overlay */}
 
-                <Carousel>
-                    <CarouselContent>
+                
+                    
                         {/* <div className="absolute top-0 left-0 ml-1 w-[450px] rounded-3xl h-[400px] bg-black opacity-100">
   </div> */}
-                        <CarouselItem><video src={abakcsem} autoPlay muted loop controls ></video></CarouselItem>
-                        <CarouselItem><video src={vybzone} autoPlay muted loop controls ></video></CarouselItem>
-                        <CarouselItem><video src={lifepills} autoPlay muted loop controls ></video></CarouselItem>
+                        {/* <CarouselItem><video src={abakcsem} autoPlay muted loop controls ></video></CarouselItem>
+                        <CarouselItem><video src={vybzone} autoPlay muted loop controls ></video></CarouselItem> */}
+                        <video src={lifepills} autoPlay muted loop controls ></video>
                         {/* Content */}
 
 
 
-                    </CarouselContent>
+                    
 
 
-                    <CarouselPrevious />
-                    <CarouselNext />
-
-                </Carousel>
                 {/* <div className='w-full h-full flex  flex-col p-6 pb-20 justify-end items-end'>
 
   <h1 className="relative text-white w-full py-1 z-10"></h1>

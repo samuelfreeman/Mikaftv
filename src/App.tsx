@@ -33,7 +33,7 @@ const Application: React.FC = () => {
   if (isLoading) {
     return (
       <div className="flex flex-col items-center justify-center h-[100vh] w-full bg-gray-100">
-        <img src="/logo.png" alt="Logo" className="w-52 h-52   mb-4" />
+        <img src="/logo.png" alt="Logo" className="w-52 h-52 -mt-10  mb-4" />
         <Progress value={progress} className="w-1/2 bg-[#681FA3]" />
       </div>
     );

@@ -44,7 +44,7 @@ const Shows = () => {
             </div>
           </div>
           {/* Image/Video */}
-          <div className="flex-1 md:max-w-[35%]">
+          <div className="md:flex-1  sm:max-w-[60%] md:max-w-[35%]">
             {data.type === "image" ? (
               <img
                 src={data.mediaUrl || "/placeholder.svg"}

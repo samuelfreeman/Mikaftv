@@ -3,9 +3,9 @@
 const Banner = () => {
   return (
     <div className='w-full flex-col justify-center mt-20 space-y-5 items-center '>
-        <div className='w-full md:flex justify-center gap-2 p-2 '>
+        <div className='w-full flex justify-center gap-2 p-2 '>
             <h1 className="text-center">Programes</h1>
-            <div className=' -mt-5 mb-5 w-17 md:mb-0 md:-mt-0  h-6 border-black border-b-2 md:border-r-2 '></div>
+            {/* <div className=' -mt-5 mb-5 w-17 md:mb-0 md:-mt-0  h-6 border-black border-b-2 md:border-r-2 '></div> */}
             <div className='flex gap-2 border px-1  rounded-md items-center'>
 
             <img width={"19"} height={"10"} src="/notificaiton.png" alt="notification icon" />
