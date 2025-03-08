@@ -7,7 +7,7 @@ const Hero = () => {
             <div className=' w-full lg:w-5/12 m-5 -ml-1 lg:m-14 lg:mt-[16px]'>
                 <h1 className='text-2xl md:text-5xl font-bold py-2'>Bringing Stories to Life,</h1>
                 <h1 className='text-xl  lg:text-2xl font-semibold pb-5'>Live updates, Exclusive Reports & trending News.</h1>
-                <p className='text-sm md:text-sm lg:text-md'>Welcome to a dynamic platform where compelling stories unfold, bringing you real-time updates, in-depth exclusive reports, and the latest trends that shape our world. Stay informed, stay inspired, and be part of the conversation.</p>
+                <p className='text-sm md:text-lg lg:text-md'>Welcome to a dynamic platform where compelling stories unfold, bringing you real-time updates, in-depth exclusive reports, and the latest trends that shape our world. Stay informed, stay inspired, and be part of the conversation.</p>
             </div>
             <div className=" flex flex-col mx-2  p-1 md:p-2   rounded-md border  md:block md:relative md:w-[550px] md:min-h-[200px] md:max-h-[320px] lg:min-h-[320px] ')] md:bg-cover md:mr-20  md:rounded-lg">
 

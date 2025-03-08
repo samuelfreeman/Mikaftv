@@ -18,12 +18,12 @@ const Shows = () => {
             {/* Main content */}
             <div className="space-y-4">
               {/* Title */}
-              <h1 className="font-bold text-2xl md:text-3xl italic">{data.title}</h1>
+              <h1 className="font-bold text-xl md:text-2xl italic">{data.title}</h1>
               <div className="w-24 border-b-2 border-[#BFBFBF] mb-4"></div>
               {/* Description */}
               <p className="text-base md:text-lg text-justify">{data.des}</p>
               {/* Subtitle */}
-              <h3 className="font-medium text-lg md:text-xl mt-6 mb-2">{data.subtitle}:</h3>
+              <h3 className="font-medium text-md md:text-lg mt-6 mb-2">{data.subtitle}:</h3>
               {/* List of expectations */}
               <ul className="space-y-2 mb-4">
                 {data.list.map((list, index) => (
