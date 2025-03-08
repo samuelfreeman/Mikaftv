@@ -2,11 +2,11 @@ import Navbar from './components/Navbar'
 
 
 import Hero from './components/Hero'
-import Updates from './components/Updates'
+// import Updates from './components/Updates'
 
 // import TelemarketPromotion from './components/TeleMarketing'
 import Footer from './components/Footer'
-import VideoDisplay from './components/ImageGallery'
+// import VideoDisplay from './components/ImageGallery'
 import { useState } from 'react'
 import Controls from './components/SubNav'
 import { motion } from 'framer-motion'

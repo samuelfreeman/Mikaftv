@@ -12,13 +12,13 @@ const Promo = () => {
             <p className='text-sm lg:text-lg'>
 
                 Beyond traditional ads, we offer unique opportunities such as sponsored content, interviews, and brand features that allow businesses to engage deeply with their audience. By leveraging our media expertise, your business can benefit from increased credibility, customer trust, and stronger market positioning. No matter your industry; retail, fashion, real estate, hospitality, tech, education, or entertainment. Mikaf TV is your gateway to reaching new heights in business growth. Our expert team will work closely with you to craft the perfect promotional strategy, ensuring maximum return on investment and long-term success.</p>
-            <p className='text-sm md:text-lg'>
+            <p className='text-sm lg:text-lg'>
 
                 Ready to take your business to the next level? Partner with Mikaf TV today and let’s make your brand the talk of the town!
                 Limited Spaces Available! Secure your slot now and take your business to the next level. <Button variant={"link"} className='font-semibold text-md'><NavLink to={"/termsandconditions"}>Terms & Conditions Apply.</NavLink> </Button></p>
             <div className='border-t-2 pt-5 '>
-                <p className='text-sm md:text-lg'>Call us now at <span className='text-[#24918D]'>0322009247, 0556818815.</span>  </p>
-                <p className='text-sm md:text-lg'>Visit us in person — find our location on the map on our <Button variant={"link"} className='-px-1  text-md text-[#24918D]'><NavLink to={"/about"}>About Us</NavLink> </Button> page. </p>
+                <p className='text-sm lg:text-lg'>Call us now at <span className='text-[#24918D]'>0322009247, 0556818815.</span>  </p>
+                <p className='text-sm lg:text-lg'>Visit us in person — find our location on the map on our <Button variant={"link"} className='-px-1  text-md text-[#24918D]'><NavLink to={"/about"}>About Us</NavLink> </Button> page. </p>
             </div>
         </div>
     )
